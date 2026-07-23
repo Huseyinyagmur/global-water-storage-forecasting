@@ -1,0 +1,98 @@
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# ==========================
+# Jupyter
+# ==========================
+.ipynb_checkpoints/
+
+# ==========================
+# VS Code
+# ==========================
+.vscode/
+
+# ==========================
+# IDE
+# ==========================
+.idea/
+
+# ==========================
+# Environment Variables
+# ==========================
+.env
+.env.*
+
+# ==========================
+# Logs
+# ==========================
+logs/
+*.log
+
+# ==========================
+# Build
+# ==========================
+build/
+dist/
+*.egg-info/
+
+# ==========================
+# Python Cache
+# ==========================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ==========================
+# Model Files
+# ==========================
+models/
+checkpoints/
+weights/
+
+# ==========================
+# Experiment Outputs
+# ==========================
+outputs/
+runs/
+wandb/
+mlruns/
+
+# ==========================
+# Data
+# ==========================
+data/raw/
+data/processed/
+
+# Eğer processed verileri paylaşmak istersen
+# data/raw/
+
+# ==========================
+# Submission Files
+# ==========================
+submissions/*.csv
+
+# Eğer submission dosyalarını GitHub'da tutmak istersen
+#!submissions/.gitkeep
+
+# ==========================
+# Temporary Files
+# ==========================
+*.tmp
+*.bak
+*.swp
+
+# ==========================
+# OS Files
+# ==========================
+.DS_Store
+Thumbs.db
+desktop.ini
