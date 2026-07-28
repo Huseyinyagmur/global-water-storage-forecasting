@@ -1,0 +1,3 @@
+Submission,path,rows_280961,id_order,duplicate,nan,infinity,numeric,min,max,mean,std
+A_best_single,C:\global-water-storage-forecasting\submissions\submission_16_A_best_single.csv,True,True,True,True,True,True,-2.2557162775914437,2.054585864741134,-0.11364401346476029,0.54006240713345
+C_notebook11_diverse,C:\global-water-storage-forecasting\submissions\submission_16_C_notebook11_diverse.csv,True,True,True,True,True,True,-2.2557162775914437,2.054585864741134,-0.11296033331457311,0.539841095903462
