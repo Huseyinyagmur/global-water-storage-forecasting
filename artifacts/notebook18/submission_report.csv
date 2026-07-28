@@ -1,0 +1,3 @@
+Submission,rows,mean,std,min,max,path
+A_domain_best,280961,-0.13097563283995425,0.531513798786027,-2.2557162775914437,2.0956647769338206,C:\global-water-storage-forecasting\submissions\submission_18_A_domain_best.csv
+B_canonical_diverse,280961,-0.13094400255456412,0.5333725489754585,-2.255716277591444,2.054585864741134,C:\global-water-storage-forecasting\submissions\submission_18_B_canonical_diverse.csv
