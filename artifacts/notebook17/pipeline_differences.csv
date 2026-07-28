@@ -1,0 +1,24 @@
+Check,Notebook 11 public-best,Notebook 16 C,Status
+Train file,data/raw/Train.csv,data/raw/Train.csv,same
+Test file,data/raw/Test.csv,data/raw/Test.csv,same
+Target,target,target,same
+Static feature order,BASE_FEATURES / BASE_MASKED (32/31),same BASE_FEATURES / BASE_MASKED,same
+Missing values,LightGBM native; masked expert excludes TWS_t,same,same
+Known/masked,test date-pattern; known when TWS_t observed,same date-pattern for OOF; test TWS_t.notna,equivalent for final test
+Date parsing,parse_dates=['time'],parse_dates=['time'],same
+Temporal features,"month, quarter, year, elapsed_month, sin/cos",same,same
+Categorical handling,all engineered values numeric,same,same
+LightGBM parameters,"160,.08,63,min_child=100,lambda=1,.85,.9,seed=42",same,same
+Random seed,42,42,same
+Fold definition,last two 18-month temporal folds for selection,same,same
+Final training data,all train,all train,same
+Known models,one full-data static LightGBM,one full-data static LightGBM,same
+Masked models,baseline + climatology-prior LGBM,only baseline LGBM for C,DIFFERENT
+Masked ensemble,0.65 baseline + 0.35 climatology-prior model,no ensemble,DIFFERENT
+Historical priors,causal train; location mean/std/month + global month,absent from C,DIFFERENT
+Known/masked combination,known model on observed TWS; blend on masked,known model on observed TWS; raw baseline on masked,DIFFERENT
+Post-processing,none beyond masked blend,none,blend itself omitted
+Clipping,none,none,same
+Submission alignment,"prediction Series indexed by test ID, mapped to sample ID",same mapping,same
+Written prediction,final_pred includes selected OOF blend,assemble(base_test) for C,DIFFERENT
+Output file,submission_optimized.csv,submission_16_C_notebook11_diverse.csv,different filename and content
