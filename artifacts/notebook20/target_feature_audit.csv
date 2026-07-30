@@ -1,0 +1,10 @@
+Feature,Source columns,Uses target,Order dependent,Time filter/order,Future/same-date risk,Risk level,Available at test,Validation leakage risk
+prior_last_target,target,yes,yes,"shift(1), location-time",no,low,yes,none under strict fold cutoff
+prior_recent_mean,target,yes,yes,"shift(1), rolling(12), location-time",no,low,yes,none under strict fold cutoff
+prior_location_mean,target,yes,yes,"shift(1), expanding, location-time",no,low,yes,none under strict fold cutoff
+prior_location_std,target,yes,yes,"shift(1), expanding, location-time",no,low,yes,none under strict fold cutoff
+prior_location_month,"target, month",yes,yes,"shift(1), location-month",no,low,yes,none under strict fold cutoff
+prior_global_month,"target, month",yes,yes,location-major group expanding,YES: future training timestamps,high,yes,potential train-feature leakage
+validation climatology state,fold-train target,yes,no,all fold-train; strict cutoff,no validation target,none,yes,none under strict fold cutoff
+location/month shrinkage fallback,fold-train target,yes,no,fold-train aggregate,no validation target,none,yes,none under strict fold cutoff
+delta lag/rolling (NB15),target-TWS_t,yes,yes,location-time shift,no,low,yes if historical,none under strict fold cutoff

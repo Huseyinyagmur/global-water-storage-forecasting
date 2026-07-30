@@ -1,0 +1,45 @@
+Validation,Model,RMSE,Rank,Spearman vs public,Kendall vs public,Pairwise accuracy,Comparable rows,Caveat
+Notebook 11 temporal,Canonical Notebook 11,0.711647,4.0,-0.39999999999999997,-0.3333333333333334,0.3333333333333333,4,different historical OOF rows
+Notebook 11 temporal,Notebook 14 alternative,0.688811,1.0,-0.39999999999999997,-0.3333333333333334,0.3333333333333333,4,different historical OOF rows
+Notebook 11 temporal,Notebook 15 delta,0.69409,2.0,-0.39999999999999997,-0.3333333333333334,0.3333333333333333,4,different historical OOF rows
+Notebook 11 temporal,Notebook 18 drying_transition,0.709586,3.0,-0.39999999999999997,-0.3333333333333334,0.3333333333333333,4,different historical OOF rows
+Public leaderboard,Canonical Notebook 11,0.824463818,1.0,1.0,1.0,1.0,4,ground truth ranking
+Public leaderboard,Notebook 14 alternative,0.825971129,3.0,1.0,1.0,1.0,4,ground truth ranking
+Public leaderboard,Notebook 15 delta,0.824797753,2.0,1.0,1.0,1.0,4,ground truth ranking
+Public leaderboard,Notebook 18 drying_transition,0.831108253,4.0,1.0,1.0,1.0,4,ground truth ranking
+Strict date-grouped,Canonical Notebook 11,0.7631172933418477,3.0,0.19999999999999998,0.0,0.5,4,different historical OOF rows
+Strict date-grouped,Notebook 15 delta,0.7622810581720626,2.0,0.19999999999999998,0.0,0.5,4,different historical OOF rows
+Strict date-grouped,Notebook 18 drying_transition,0.764050717816503,4.0,0.19999999999999998,0.0,0.5,4,different historical OOF rows
+Strict date-grouped,Notebook 14 alternative,0.7531084151085482,1.0,0.19999999999999998,0.0,0.5,4,different historical OOF rows
+Irregular hindcast,Canonical Notebook 11,0.6692520983740852,4.0,-0.7999999999999999,-0.6666666666666669,0.16666666666666666,4,different historical OOF rows
+Irregular hindcast,Notebook 15 delta,0.6689974551287375,3.0,-0.7999999999999999,-0.6666666666666669,0.16666666666666666,4,different historical OOF rows
+Irregular hindcast,Notebook 18 drying_transition,0.6655334963666794,2.0,-0.7999999999999999,-0.6666666666666669,0.16666666666666666,4,different historical OOF rows
+Irregular hindcast,Notebook 14 alternative,0.658091377427254,1.0,-0.7999999999999999,-0.6666666666666669,0.16666666666666666,4,different historical OOF rows
+Spatial block,Canonical Notebook 11,0.8333641297334545,2.0,0.39999999999999997,0.3333333333333334,0.6666666666666666,4,different historical OOF rows
+Spatial block,Notebook 15 delta,0.8354299115213758,3.0,0.39999999999999997,0.3333333333333334,0.6666666666666666,4,different historical OOF rows
+Spatial block,Notebook 18 drying_transition,0.8534836024840471,4.0,0.39999999999999997,0.3333333333333334,0.6666666666666666,4,different historical OOF rows
+Spatial block,Notebook 14 alternative,0.823676118274867,1.0,0.39999999999999997,0.3333333333333334,0.6666666666666666,4,different historical OOF rows
+Space-time,Canonical Notebook 11,0.8174234092821014,4.0,-0.7999999999999999,-0.6666666666666669,0.16666666666666666,4,different historical OOF rows
+Space-time,Notebook 15 delta,0.8166899043240657,3.0,-0.7999999999999999,-0.6666666666666669,0.16666666666666666,4,different historical OOF rows
+Space-time,Notebook 18 drying_transition,0.8161420556227712,2.0,-0.7999999999999999,-0.6666666666666669,0.16666666666666666,4,different historical OOF rows
+Space-time,Notebook 14 alternative,0.8046963573943743,1.0,-0.7999999999999999,-0.6666666666666669,0.16666666666666666,4,different historical OOF rows
+irregular,Prior:hierarchical,0.6800228604976581,2.0,,,,0,four-candidate common predictions unavailable; no invented rank
+irregular,Prior:strict_expanding,0.6800228604976581,2.0,,,,0,four-candidate common predictions unavailable; no invented rank
+irregular,Prior:strict_oof,0.6800228604976581,2.0,,,,0,four-candidate common predictions unavailable; no invented rank
+irregular,Prior:canonical,0.6803662254658691,4.0,,,,0,four-candidate common predictions unavailable; no invented rank
+irregular,Prior:no_global,0.6803798293549599,5.0,,,,0,four-candidate common predictions unavailable; no invented rank
+space_time,Prior:hierarchical,0.816917007246189,1.0,,,,0,four-candidate common predictions unavailable; no invented rank
+space_time,Prior:strict_expanding,0.8172068885863609,2.5,,,,0,four-candidate common predictions unavailable; no invented rank
+space_time,Prior:strict_oof,0.8172068885863609,2.5,,,,0,four-candidate common predictions unavailable; no invented rank
+space_time,Prior:canonical,0.8174234092821014,4.0,,,,0,four-candidate common predictions unavailable; no invented rank
+space_time,Prior:no_global,0.8211337217121479,5.0,,,,0,four-candidate common predictions unavailable; no invented rank
+spatial_block,Prior:strict_expanding,0.8011388208670541,1.5,,,,0,four-candidate common predictions unavailable; no invented rank
+spatial_block,Prior:strict_oof,0.8011388208670541,1.5,,,,0,four-candidate common predictions unavailable; no invented rank
+spatial_block,Prior:canonical,0.801397736549314,3.0,,,,0,four-candidate common predictions unavailable; no invented rank
+spatial_block,Prior:no_global,0.8061074653088663,4.0,,,,0,four-candidate common predictions unavailable; no invented rank
+spatial_block,Prior:hierarchical,0.8120716654088449,5.0,,,,0,four-candidate common predictions unavailable; no invented rank
+strict_temporal,Prior:canonical,0.7405238656591993,1.0,,,,0,four-candidate common predictions unavailable; no invented rank
+strict_temporal,Prior:no_global,0.7427212940749541,2.0,,,,0,four-candidate common predictions unavailable; no invented rank
+strict_temporal,Prior:hierarchical,0.7434003367101354,4.0,,,,0,four-candidate common predictions unavailable; no invented rank
+strict_temporal,Prior:strict_expanding,0.7434003367101354,4.0,,,,0,four-candidate common predictions unavailable; no invented rank
+strict_temporal,Prior:strict_oof,0.7434003367101354,4.0,,,,0,four-candidate common predictions unavailable; no invented rank

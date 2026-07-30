@@ -1,0 +1,7 @@
+Validation,Overall RMSE,Masked RMSE,Mean fold RMSE,Fold std,Worst fold,Leakage status,Test-date similarity,Spatial coverage,Cost
+Notebook 08,0.6109,,0.6109,0.0891,0.7851,REJECT: same date split across train/valid,low,none,recorded
+Notebook 11,0.711647,0.75803,,0.060838,0.769866,prior_global_month training-order risk,medium ordinal mask,same grid,recorded
+irregular,0.6804569968599677,0.7509898726357689,0.6803662254658691,0.011114127091783943,0.691480352557653,strict date cutoff,high,same grid,2 folds
+space_time,0.8174234092821014,0.8589247039138181,0.8174234092821014,0.0,0.8174234092821014,strict date cutoff,medium,joint,1 folds
+spatial_block,0.8021423205620074,0.8538941515872018,0.8013977365493138,0.03455387518410567,0.8333641297334545,strict date cutoff,medium,contiguous holdout,3 folds
+strict_temporal,0.7408684489066159,0.7803997688492708,0.7405238656591993,0.022593427682648493,0.7631172933418477,strict date cutoff,medium,same grid,2 folds
