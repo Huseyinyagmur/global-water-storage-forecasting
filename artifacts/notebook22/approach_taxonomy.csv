@@ -1,0 +1,13 @@
+Approach,Notebooks,Experiment count,Best local result,Best public result,Typical failure reason,Public generalization tendency,Future research value
+Baseline/statistical,"01,02",2,not available,not available,weak validation / limited capacity,reference only,Low
+Gradient boosting,"03,04,05,09,11",5,0.711647 (NB11 recorded),0.824463818,redundancy and validation mismatch,strongest main-model family,High as frozen base
+Ensemble/blending,"06,11,12,14,16",5,various; not directly comparable,0.824463818,prediction drift / OOF selection overfit,works only conservatively,Medium
+Feature engineering,"07,12,16",3,local gains recorded,0.8298,multiple-testing and distribution shift,poor broad-search transfer,Low
+Time-series validation,"08,11,20",3,0.6109/0.711647/strict suite,not applicable,same-date contamination or incomplete space test,methodological value high,High
+Alternative models,14,1,0.688811 representative,0.825971129,local-public rank mismatch,did not beat LightGBM,Low
+Delta forecasting,15,1,0.694090 representative,0.824797753,target-form mismatch/instability (hypothesis),near-best but unconfirmed,Medium-low
+Hydrology-inspired features,18,1,0.709586 representative,0.831108253,weak incremental representation,poor public transfer,Low
+Reproducibility audit,17,1,exact artifact match,not applicable,pipeline identity ambiguity,essential control,High
+Challenge specification analysis,19,1,not applicable,not applicable,none; decision document,essential design alignment,High
+Leakage/validation audit,20,1,strict 0.740524; spatial 0.801398,not applicable,limited candidate count,essential but proxy uncertain,High
+Spatial residual correction,21,1,spatial gain 0.00531118,0.823609466,transfer stability remains limited evidence,positive public transfer,High

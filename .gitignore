@@ -97,3 +97,4 @@ submissions/*.csv
 Thumbs.db
 desktop.ini
 
+.tmp**

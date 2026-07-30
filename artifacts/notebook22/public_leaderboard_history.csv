@@ -1,0 +1,11 @@
+Notebook,Submission filename,Method,Public RMSE,Evidence source,Difference vs previous best,New best,Aligned with local expectation
+09,submission filename not available,advanced model selection,0.835133802,repository notebook record,,True,not available
+11A,submission filename not available,dual-expert improvement,0.836026816,repository notebook record,0.0008930139999999698,False,not available
+11B,submission_optimized.csv,canonical selected blend,0.824463818,repository artifact + SHA audit,-0.010669983999999966,True,yes
+12,submission filename not available,advanced optimization,0.8298,repository notebook/user-recorded result,0.005336181999999967,False,no
+14,submission_14.csv,alternative-model blend,0.825971129,artifacts/notebook20,0.0015073110000000112,False,no
+15,submission filename not available,delta target,0.824797753,artifacts/notebook20,0.0003339350000000074,False,no
+16A,submission_16_A_best_single.csv,best single feature,0.839181712,task-provided; in-repo score corroboration unavailable,0.01471789400000001,False,no
+16C,submission_16_C_notebook11_diverse.csv,non-identical Notebook-11 diverse pipeline,0.836026816,task-provided; in-repo score corroboration unavailable,0.011562997999999935,False,no
+18A,submission_18_A_domain_best.csv,drying-transition domain feature,0.831108253,artifacts/notebook20,0.006644435000000004,False,no
+21,submission_21_spatial_residual_candidate.csv,stable hemisphere residual correction,0.823609466,task-provided current public result,-0.0008543520000000582,True,yes

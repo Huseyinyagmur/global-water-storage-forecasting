@@ -1,0 +1,8 @@
+Failure family,Evidence notebooks,Observed result,Possible cause,Evidence status
+New boosting models,"04,05,09",No verified gain over canonical,model redundancy; validation mismatch,hypothesis
+Alternative models,14,Local representative improved but public 0.825971129,validation mismatch / model redundancy,observed mismatch; cause hypothesis
+Large feature engineering,"12,16","Public 0.8298, 0.839181712",multiple-testing overfit; distribution shift,observed public loss; cause hypothesis
+Domain hydrology features,18,Public 0.831108253,weak independent physical representation,observed; mechanism hypothesis
+Delta forecasting,15,Public 0.824797753,temporal/spatial instability or target noise,observed small loss; cause hypothesis
+Large blend/cascade changes,"12,16C",Public loss and identity mismatch,prediction drift / pipeline mismatch,partly proven by NB17
+Strict prior alternatives,20,No variant passed every gate,loss of risky training-feature advantage and weaker fit,gate failure observed; cause hypothesis

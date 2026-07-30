@@ -1,0 +1,8 @@
+Validation system,Verified result,Recommended role,Lesson
+Notebook 08 validation,0.6109 recorded,Not decision-grade,Rows from the same date can enter train and validation; spatial peers reveal contemporaneous state.
+Notebook 11 temporal OOF,0.711647 overall; 0.758030 masked,Useful but incomplete,Date grouping and known/masked simulation are useful; spatial transfer and irregular test gaps are incomplete.
+Strict temporal,0.740524 canonical mean,Required joint gate,Forecast-origin causality; does not alone measure unseen-region transfer.
+Irregular-date hindcast,0.680366 canonical mean,Required joint gate,Better imitates official non-uniform date offsets.
+Spatial block,0.801398 canonical mean; worst south 0.833364,"Required joint gate, not standalone",Measures contiguous-region transfer; strongest observed public rank proxy.
+Space-time,0.817423 canonical,Required joint gate,Measures simultaneous future-date and held-region transfer.
+Public ranking proxy,Spearman 0.40; pairwise 66.7%,Weak evidence,"Highest among NB20 systems, but only four candidates and partially non-common historical OOF evidence."

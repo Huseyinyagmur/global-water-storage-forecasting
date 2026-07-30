@@ -1,0 +1,11 @@
+Do-not-repeat item,Evidence notebooks,Why,Reconsider only when
+New boosting model from scratch,"03–05,14",No verified public advantage; redundancy high,Only with new data/target representation evidence
+Broad hyperparameter search,"12,13,16",Raises local selection overfit,"Only nested, frozen multi-system validation"
+Many generic features,"07,12,16",Local gains transferred poorly,Only one justified feature with ablation
+Uncontrolled blend/cascade,"06,12,16",Creates large prediction drift,Only OOF conservative weights and strict MAD cap
+Large prediction correction,21,Success came from bounded refinement,Only if independent transferability evidence supports it
+Single-metric optimization,"08,11,20",No single proxy captures temporal and spatial shift,Never for final selection
+Leakage-risky target encoding,"16,20",Ordering/availability risks,"Only cross-fitted, cutoff-safe encoding"
+Assume local gain means public gain,"12,14,16,18",Repeated counterexamples,Never; require robust gates
+Overwrite canonical artifact,17,Destroys reproducibility,Never
+Experiment before reproduction,"16C,17",Wrong base invalidates conclusions,Never

@@ -1,0 +1,9 @@
+Risk,Affected notebook/pipeline,Severity,Direct leakage?,Indirect leakage?,Public submission impact,Resolution,Current status
+Notebook 16 C was not Notebook 11,16C/17,high,No,No,Misidentified candidate and poor public score,"Compare code, predictions and artifact hashes",resolved by NB17
+Raw baseline vs selected blend confusion,11/16/17,high,No,No,Wrong reference invalidates ablation conclusions,Freeze selected-blend artifact,resolved
+prior_global_month location-major ordering,11/20,high,No direct validation-target leakage,Yes,May inflate training representation,Strict time filtering/OOF prior; keep canonical only as immutable base,"known, not removed from canonical"
+91.30% future-timestamp contributor rate,11/20,high,No,Yes,Quantifies training-feature availability risk,Do not use ordering-based expanding feature in new pipelines,confirmed
+Validation target not directly included,11/20,medium,No,Potential indirect training-feature issue only,Prevents overstating risk as direct leakage,State distinction explicitly,confirmed
+Prediction-time availability,19/20/21,high,No,No if rules followed,Unavailable target/covariate would invalidate method,Use only lat/lon/month and available covariates for correction,controlled
+Canonical SHA verification,17/20/21,low,No,No,Protects reproducibility,Assert SHA256 before analysis,active: b61ecd15862ca6d7527c4f494de802ed6ea6d31c420737cb78f977d9bda3b968
+Metadata-only notebook change,09/worktree audit,low,No,No,Could be mistaken for substantive edit,Preserve and classify separately,observed; untouched
