@@ -1,0 +1,2 @@
+status,candidate,all_robust_gates_passed,test_distribution_safe,rows,id_order,known_unchanged,duplicate_id,nan,infinity,canonical_correlation,mad,maximum_prediction_difference,changed_row_fraction
+generated,hemisphere|light|cap_0.05,True,True,280961,True,True,0,0,0,0.9995127153931505,0.006554646374407838,0.050000000000000044,0.1310929274881567
