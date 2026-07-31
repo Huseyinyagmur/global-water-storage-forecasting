@@ -1,0 +1,8 @@
+Risk,Type,Severity,Affected component,Evidence,Mitigation,Residual risk,Current status
+Same-month row split,validation leakage/optimism,high,Notebook 08 validation,same date can occur in train and validation,group complete dates,historical NB08 metrics remain optimistic,superseded
+prior_global_month location-major ordering,indirect temporal leakage risk,high,canonical training features,91.30% future-timestamp contributor rate,strict cutoff/OOF for new research; freeze canonical artifact,canonical still contains risky training construction,documented
+Validation target direct leakage,direct leakage,low/none found,Notebook 11/20 validation,validation target not included in aggregate,maintain fold assertions,training-feature risk remains distinct,not detected
+Prediction-time availability,availability,high,all target-derived inputs,Notebook 19 technical specification,use only available covariates at inference,unknown external deployment feeds,controlled in evaluated pipeline
+Train-on-past correction,temporal leakage,low,Notebook 21/23 refinement,max historical time < min future time assertions,older OOF residual pool only,"weak transferability, not leakage",controlled
+Known-row preservation,submission integrity,low,Notebook 21,exact equality against canonical,assert before write,none observed,verified
+Current-best reproduction,reproducibility,low,Notebook 21/23,100% tolerance match and SHA,immutable hashes,external environment drift,verified

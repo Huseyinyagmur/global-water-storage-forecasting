@@ -1,0 +1,12 @@
+Physical process,Why important,Represented?,Existing proxy,Potential error impact,Possible future addition,Prediction-time availability issue
+Groundwater,major TWS component,not directly,TWS persistence/soil-climate proxies,regional bias and lag,satellite/model groundwater product,future availability/version latency
+Snow and ice storage,dominant at high latitudes,not directly,SPEI/season/latitude,high-latitude tail risk,snow water equivalent/cryosphere data,forecast-time availability
+Surface water,lakes/rivers/reservoir storage,not directly,location/climate,missed rapid storage changes,surface-water extent/altimetry,coverage and latency
+Runoff,links precipitation to export,no,SPEI weak proxy,timing/amplitude error,forecast/reanalysis runoff,future leakage if realized runoff
+Evapotranspiration,major loss flux,no,soil/SPEI proxy,climate-regime error,forecast ET product,latency/model dependence
+Soil moisture,important land-water component,"yes, one supplied variable",direct supplied covariate,depth/scale incomplete,multi-layer soil moisture,consistent test feed
+Anthropogenic water use,human storage pressure,no,none verified,regional systematic bias,water-use scenarios,future scenario uncertainty
+Irrigation,alters soil/groundwater,no,soil moisture indirect,agricultural-region bias,irrigation maps/schedules,future schedule unknown
+Reservoir operations,large abrupt storage changes,no,location weak proxy,operational discontinuities,reservoir rule/level data,often unavailable prospectively
+Human abstraction,groundwater/surface withdrawals,no,none verified,long-term trend error,abstraction inventories/scenarios,reporting delay
+Land-use changes,changes ET/runoff/infiltration,no,static location proxy,nonstationarity,dated land-cover products,future land-use scenario

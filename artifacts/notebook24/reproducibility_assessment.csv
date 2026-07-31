@@ -1,0 +1,14 @@
+Check,Status,Evidence,Risk,Improvement recommendation,Overall rating
+Notebook build scripts,present,9 builder scripts; later notebooks reproducible,earlier notebooks may lack builders,add builders only when original logic is frozen,Moderate
+Fixed random seeds,mostly present,SEED=42 in advanced pipelines,library/version determinism is not absolute,record package lock,Moderate
+Environment metadata,partial,kernelspec and Python metadata in notebooks,requirements.txt is empty; local .venv required,export pinned environment,Moderate
+Input paths,moderate,ROOT fallback and data/raw convention,working-directory assumptions remain,centralize path config,Moderate
+Output directory creation,present,"mkdir(parents=True, exist_ok=True)",low,retain,Moderate
+Deterministic ordering,present in key pipelines,explicit date and spatial sorts,LightGBM/platform differences possible,pin versions and threads,Moderate
+Submission hashes,high,canonical b61ecd15862ca6d7527c4f494de802ed6ea6d31c420737cb78f977d9bda3b968; current 84d4ce6efdbfc3fbca55d9eea1ebccfe628ffa962e31b62a654c179dc649b488,none observed,retain fail-fast gates,Moderate
+Exact reproduction tests,high,Notebook 17 and 23,numeric parser tolerances,retain SHA + tolerance checks,Moderate
+Assertions,present,"strict time, SHA, IDs and finiteness",coverage varies by early notebook,standardize audit helper,Moderate
+Artefact availability,moderate,aggregate CSV/MD available,row-level OOF absent for tail audit,persist compact OOF parquet/npz,Moderate
+Notebook execution state,high,25/25 numbered notebook files show executed code,metadata is not a full run log,record run manifests,Moderate
+Hidden manual steps,moderate,leaderboard upload/scoring external,some filenames/scores supplied outside repo,maintain submission registry,Moderate
+External leaderboard scores,partial,NB22 flags uncorroborated scores,not independently reproducible,store dated score manifest,Moderate

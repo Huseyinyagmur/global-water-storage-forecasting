@@ -1,0 +1,3 @@
+Submission,Exists,SHA256,SHA match,Rows,ID unique,ID order,NaN,Infinity,Prediction minimum,Prediction maximum,Known rows,Masked rows,Known preserved vs canonical,Masked coverage,Correlation vs canonical,MAD vs canonical,Maximum absolute difference,Changed row fraction
+canonical base,True,b61ecd15862ca6d7527c4f494de802ed6ea6d31c420737cb78f977d9bda3b968,True,280961,True,True,0,0,-2.255716277591444,2.054585864741134,94048,186913,True,186913,1.0,0.0,0.0,0.0
+current best refined,True,84d4ce6efdbfc3fbca55d9eea1ebccfe628ffa962e31b62a654c179dc649b488,True,280961,True,True,0,0,-2.255716277591444,2.054585864741134,94048,186913,True,186913,0.9995127153931507,0.006554646374407867,0.0500000000000003,0.1310929274881567

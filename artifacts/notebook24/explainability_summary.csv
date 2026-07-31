@@ -1,0 +1,9 @@
+Topic,Finding,Evidence,Caveat
+Known expert global importance,"TWS_t dominant; then SPEI_06, soil moisture, latitude band",Notebook 10 permutation importance,TWS_t availability differs by row
+Masked expert global importance,"SPEI_12, SPEI_06, SPEI mean, soil moisture, SPEI min",Notebook 10 permutation importance,climate proxies do not fully represent TWS physics
+Importance stability,masked latitude and elapsed_month changed most across two folds,Notebook 10 fold stability,only two folds; instability warning
+Spatial effects,"latitude, spatial_bin_10, longitude trigonometric/interactions material for masked expert",Notebook 10,spatial association is not causal explanation
+Temporal effects,elapsed_month and cyclic month features contribute,Notebook 10,distribution shift possible
+Climate effects,"multi-scale SPEI and soil moisture important, especially masked rows",Notebook 10,regime performance evidence limited
+Target-derived risk,TWS_t is legitimate only on known rows; priors carry ordering risk,Notebooks 10/20,strict availability controls required
+Correction explainability,simple +0.05 stable Southern masked-row intercept,Notebook 21,highly transparent but NB23 found weak temporal transfer

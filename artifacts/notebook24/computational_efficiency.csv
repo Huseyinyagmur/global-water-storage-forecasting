@@ -1,0 +1,10 @@
+Item,Value,Evidence,Note
+Canonical model count,3 per fold/inference path,Notebook 11/21 code,"known expert, masked base, masked prior expert"
+Blend complexity,0.65 base + 0.35 history on masked rows,Notebook 11,simple weighted blend
+Notebook 21 runtime,917.7,executed notebook stream,includes multiple validation fits
+Notebook 23 runtime,244.6,executed notebook stream,seven model blocks
+Peak memory,not available,no persisted profiler,do not infer
+Prediction time,not available,no persisted benchmark,batch benchmark needed
+Correction runtime,negligible relative to models; exact time not available,vectorized group map,no isolated timer
+Notebook 24 artefact size bytes,89282,filesystem,report-only
+Batch-inference suitability,likely suitable with caveats,tree models + vectorized correction,requires environment and data-feed validation

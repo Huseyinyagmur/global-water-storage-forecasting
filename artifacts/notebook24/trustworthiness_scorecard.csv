@@ -1,0 +1,11 @@
+Component,Score 0-5,Weight,Evidence,Weighted contribution /100,Total score,Classification,Framework note
+Performance,4.0,0.15,"best public score, but small absolute gain",12.0,66.30000000000001,Useful but requires careful oversight,"Project-internal decision framework, not an external certification."
+Temporal robustness,2.0,0.15,NB23 weak transfer; closest window worsened,6.0,66.30000000000001,Useful but requires careful oversight,"Project-internal decision framework, not an external certification."
+Spatial robustness,3.0,0.12,NB21 spatial gain; south remains key risk,7.199999999999999,66.30000000000001,Useful but requires careful oversight,"Project-internal decision framework, not an external certification."
+Bias awareness,4.5,0.08,bias and uncertainty explicitly audited,7.199999999999999,66.30000000000001,Useful but requires careful oversight,"Project-internal decision framework, not an external certification."
+Leakage control,3.0,0.12,new correction causal; canonical prior ordering risk remains,7.199999999999999,66.30000000000001,Useful but requires careful oversight,"Project-internal decision framework, not an external certification."
+Reproducibility,4.0,0.12,hash/build/assertions strong; environment and row OOF gaps,9.6,66.30000000000001,Useful but requires careful oversight,"Project-internal decision framework, not an external certification."
+Explainability,4.0,0.08,base importance plus transparent correction,6.4,66.30000000000001,Useful but requires careful oversight,"Project-internal decision framework, not an external certification."
+Computational practicality,3.5,0.05,batch-friendly architecture; timings incomplete,3.5000000000000004,66.30000000000001,Useful but requires careful oversight,"Project-internal decision framework, not an external certification."
+Physical completeness,2.0,0.08,many TWS components absent,3.2,66.30000000000001,Useful but requires careful oversight,"Project-internal decision framework, not an external certification."
+Operational safety,4.0,0.05,use boundaries and monitoring documented,4.0,66.30000000000001,Useful but requires careful oversight,"Project-internal decision framework, not an external certification."

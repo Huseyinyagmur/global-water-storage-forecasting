@@ -1,0 +1,15 @@
+Metric,Value,Evidence,Comparability note
+Canonical public RMSE,0.824463818,public leaderboard,lower is better
+Current-best public RMSE,0.823609466,public leaderboard,lower is better
+Absolute public improvement,0.0008543520000000582,derived from public scores,positive improvement
+Relative public improvement,0.0010362516599849846,derived from public scores,fraction
+Strict temporal canonical RMSE,0.7405238656591993,Notebook 20,different validation design
+Irregular hindcast canonical RMSE,0.6803662254658691,Notebook 20,different validation design
+Spatial block canonical mean RMSE,0.8013977365493138,Notebook 20,different validation design
+Space-time canonical RMSE,0.8174234092821014,Notebook 20,different validation design
+Southern worst canonical RMSE,0.8333641297334545,Notebook 20,regional fold
+NB23 improved windows,3.0,Notebook 23,out of four
+NB23 mean gain,0.0009893846662337251,Notebook 23,four windows
+NB23 median gain,0.0008992051154714,Notebook 23,four windows
+NB23 closest-window gain,-0.0026125353473476,Notebook 23,risk signal
+NB23 transferability score,54.52652147646609,Notebook 23,project decision score; not RMSE
