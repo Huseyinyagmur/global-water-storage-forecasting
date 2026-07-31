@@ -1,0 +1,2 @@
+candidate,correction_group,group_hierarchy,residual_definition,minimum_sample_per_fold,minimum_folds,sign_consistency_threshold,minimum_absolute_bias,shrinkage_alpha,correction_cap,fallback,eligibility,known_policy,prediction_correlation,mad,maximum_difference,exact_match_rate,reproduction_pass
+hemisphere|light|cap_0.05,hemisphere,hemisphere -> zero,target - prediction,100,3,0.75,0.01,200.0,0.05,zero correction,stable-bias group and masked row only,unchanged,1.0,3.6294284434459373e-17,2.9967348047499343e-16,1.0,True

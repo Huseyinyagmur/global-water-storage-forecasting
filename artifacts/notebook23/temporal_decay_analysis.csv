@@ -1,0 +1,5 @@
+Window,Month gap,Sign accuracy,RMSE gain,Correction calibration error,Harmful correction rate,Spearman gap vs gain,Linear gain slope per month,Bootstrap Spearman CI low,Bootstrap Spearman CI high,Small-sample caveat
+window_1,1,1.0,0.0004533084053492953,0.022154951905152737,0.0,-0.7745966692414834,-0.00015492129090672663,-1.0,-0.7745966692414834,"Only four windows; trend is exploratory, not causal."
+window_2,1,1.0,0.004771663781339752,0.038951136686696225,0.0,-0.7745966692414834,-0.00015492129090672663,-1.0,-0.7745966692414834,"Only four windows; trend is exploratory, not causal."
+window_3,1,0.5,0.0013451018255936642,0.12488599076651528,0.5,-0.7745966692414834,-0.00015492129090672663,-1.0,-0.7745966692414834,"Only four windows; trend is exploratory, not causal."
+window_4,32,0.0,-0.002612535347347622,0.19523839816410793,1.0,-0.7745966692414834,-0.00015492129090672663,-1.0,-0.7745966692414834,"Only four windows; trend is exploratory, not causal."

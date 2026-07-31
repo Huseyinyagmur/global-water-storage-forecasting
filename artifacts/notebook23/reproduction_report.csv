@@ -1,0 +1,2 @@
+canonical_exists,current_best_exists,canonical_sha256,current_best_sha256,canonical_sha_match,current_best_sha_match,rows,id_unique,id_order,nan,infinity,known_rows,masked_rows,correlation,mad,maximum_difference,changed_row_fraction,known_rows_exact
+True,True,b61ecd15862ca6d7527c4f494de802ed6ea6d31c420737cb78f977d9bda3b968,84d4ce6efdbfc3fbca55d9eea1ebccfe628ffa962e31b62a654c179dc649b488,True,True,280961,True,True,0,0,94048,186913,0.9995127153931507,0.006554646374407865,0.0500000000000003,0.1310929274881567,True
