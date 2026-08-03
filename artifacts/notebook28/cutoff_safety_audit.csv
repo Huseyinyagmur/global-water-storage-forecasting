@@ -1,0 +1,3 @@
+Scenario,Source_month,Final_selection,Rationale,Status
+A_strict_operational,t-1,Eligible,Prior complete month; accommodates documented ~5-day ERA5-Land-T lag,blocked: external data unavailable
+B_less_conservative,t conditional,Research only,Needs exact issue day and archived ERA5-Land-T vintage; neither is proven,ineligible without organizer/vintage evidence

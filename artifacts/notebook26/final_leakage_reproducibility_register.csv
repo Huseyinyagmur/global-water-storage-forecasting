@@ -1,0 +1,11 @@
+Risk,Evidence,Severity,Mitigation,Residual risk,Final status
+Same-month split,Notebook 08 same dates across partitions,high,complete date groups,historical score remains optimistic,superseded
+prior_global_month location-major ordering,Notebook 20 audit,high,strict date-grouped prior for new OOF,canonical base retains training risk,documented/frozen
+91.30% future-date exposure,Notebook 20 contributor audit,high,do not reuse ordering implementation,indirect training-feature exposure,confirmed
+Direct validation-target leakage,Notebook 20 found none,none detected,fold target isolation assertions,indirect risk distinct,not detected
+Prediction-time availability,Notebook 19 specification,high,known/masked separation and available covariates,external feed latency,controlled in pipeline
+Notebook 16 reference mismatch,Notebook 17 file/code comparison,high,immutable canonical SHA,historical conclusions affected,resolved
+Canonical reproduction,Notebook 17/20/21 SHA and identity,low,fail-fast SHA,environment drift,verified
+Canonical-equivalent OOF naming,Notebook 25 strict prior,medium,explicit proxy terminology,not exact public pipeline,controlled
+Fixed scripts and caches,Builders 16–26; NB25 policy key,low,validate cache manifest,early notebooks less standardized,partial/high
+External leaderboard records,Notebook 22 evidence caveat,medium,label externally supplied values,cannot independently reproduce server scoring,documented

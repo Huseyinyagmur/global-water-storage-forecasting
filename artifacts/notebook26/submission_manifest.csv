@@ -1,0 +1,16 @@
+Filename,Origin notebook,Method,SHA256,Row count,Public RMSE,Status,Role,Should be used for final submission,Notes
+submission_12_optimized.csv,not available,not available,11ce5fc87e2858e146c30e9fa8bddce90aa444f0413e7ee94b1979c5a288cfd7,280961,,historical,experimental,False,Public score blank when not recorded/verified.
+submission_13_generalization.csv,not available,not available,b61ecd15862ca6d7527c4f494de802ed6ea6d31c420737cb78f977d9bda3b968,280961,,historical,experimental,False,Public score blank when not recorded/verified.
+submission_14.csv,14,see originating notebook,456fde8fca3262faf37acb12cf76610d350565a98655eefd860b9c7187241209,280961,0.825971129,historical,experimental,False,Public score blank when not recorded/verified.
+submission_15_primary.csv,15,see originating notebook,47335854a382a0578c2e6bb123c40a87874f2442f7c3f2b7406848ee647cbabd,280961,0.824797753,historical,experimental,False,Public score blank when not recorded/verified.
+submission_16_A_best_single.csv,not available,not available,0a44a22e90a9ba2952634b10ee658505fa0cda38c4f093ace48eab5df788a0ab,280961,,historical,experimental,False,Public score blank when not recorded/verified.
+submission_16_C_notebook11_diverse.csv,not available,not available,371ae2b2a0fae3e44f7b4660cbe45371e8662e2e6e20f5107e2e000c89a4d6d1,280961,,historical,experimental,False,Public score blank when not recorded/verified.
+submission_17_notebook11_exact_reproduction.csv,not available,not available,b61ecd15862ca6d7527c4f494de802ed6ea6d31c420737cb78f977d9bda3b968,280961,,historical,experimental,False,Public score blank when not recorded/verified.
+submission_18_A_domain_best.csv,18,see originating notebook,9dc67a1d0abb31e3dbfadcf9758c23bf47c7bd74ad2c8486105cbebfc4192b6a,280961,0.831108253,historical,experimental,False,Public score blank when not recorded/verified.
+submission_18_B_canonical_diverse.csv,not available,not available,e383849131bd7616074534644cfc8b377af5bd1b2b5a3fa850130c73e0d08fc4,280961,,historical,experimental,False,Public score blank when not recorded/verified.
+submission_21_spatial_residual_candidate.csv,21,see originating notebook,84d4ce6efdbfc3fbca55d9eea1ebccfe628ffa962e31b62a654c179dc649b488,280961,0.823609466,verified final,current-best,True,Public score blank when not recorded/verified.
+submission_advanced_model.csv,not available,not available,371ae2b2a0fae3e44f7b4660cbe45371e8662e2e6e20f5107e2e000c89a4d6d1,280961,,historical,experimental,False,Public score blank when not recorded/verified.
+submission_improved.csv,not available,not available,f606ddf25394196de7afb372d978ff36f6399c2f6257c0576feb8e319b29b987,280961,,historical,experimental,False,Public score blank when not recorded/verified.
+submission_optimized.csv,11,see originating notebook,b61ecd15862ca6d7527c4f494de802ed6ea6d31c420737cb78f977d9bda3b968,280961,0.824463818,verified base,canonical/base,False,Public score blank when not recorded/verified.
+submission_v1.csv,not available,not available,3094e38c4c54979fba6eb239e401bdfb0da7f2a7833c7350cb2c10a19b3f3907,280961,,historical,experimental,False,Public score blank when not recorded/verified.
+submission_xgboost_v1.csv,not available,not available,d1473dcf2fc20279bb3d2755db3ce60fdb0591c366e74133596e557ea42d08db,280961,,historical,experimental,False,Public score blank when not recorded/verified.

@@ -1,0 +1,17 @@
+Stage,Notebook,Method,Validation design,Local metric,Public RMSE,Public delta vs canonical,Submission produced,Status,Main conclusion
+Baseline,02,statistical/basic regressors,early/random,not available,,,True,inconclusive,sanity reference only
+Boosting,03,LightGBM,early validation,not available,,,True,promising,became strongest family
+Boosting,04,XGBoost,early validation,not available,,,True,failed,no verified public advantage
+Boosting,05,CatBoost,early validation,not available,,,True,failed,no verified public advantage
+Ensemble,06,boosting ensemble,early validation,not available,,,True,inconclusive,OOF/drift control required
+Canonical,11,LightGBM selected blend,temporal OOF,0.711647 overall,0.824463818,0.0,True,successful,durable canonical base
+Alternatives,14,alternative-model blend,temporal OOF,0.688811 representative,0.825971129,0.0015073110000000112,True,public worse,local rank did not transfer
+Delta,15,delta-target dual expert,temporal OOF,0.694090 representative,0.824797753,0.0003339350000000074,True,near-best,did not beat canonical
+Feature research,16A,best single feature,Notebook-11-like OOF,local gain,0.839181712,0.01471789400000001,True,public worse,broad search overfit; score supplied externally
+Reference mismatch,16C/17,non-identical Notebook-11 reference,audit,not available,0.836026816,0.011562997999999935,True,failed,Notebook 17 proved pipeline mismatch; score supplied externally
+Hydrology,18,drying-transition/domain features,canonical OOF,0.709586 representative,0.831108253,0.006644435000000004,True,public worse,weak incremental signal
+Validation audit,20,strict temporal/irregular/spatial/space-time,multi-system,0.740524/0.680366/0.801398/0.817423,,,False,methodological,ordering and spatial risks exposed
+Refinement,21,Southern residual correction,joint gates,spatial gain 0.005311,0.823609466,-0.0008543520000000582,True,current best,small public-positive refinement
+Transfer audit,23,four historical windows,strict future windows,score 54.53/100,,,False,weakly transferable,closest window worsened
+Trustworthiness,24,model card/scorecard,evidence synthesis,66.30/100,,,False,oversight required,documented use boundaries
+OOF audit,25,canonical-equivalent strict OOF,2 strict folds,RMSE 0.743809; MAE 0.568233,,,False,valid proxy OOF,tail/support artefacts persisted

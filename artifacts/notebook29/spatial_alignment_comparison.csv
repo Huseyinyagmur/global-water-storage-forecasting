@@ -1,0 +1,3 @@
+method,rows,coverage,missing_rate,runtime_seconds,mean_abs_difference_vs_nearest,max_abs_difference_vs_nearest,mean_coordinate_distance_deg,physical_consistency,selected,selection_reason
+nearest,8339,0.9946036695047368,0.005396330495263221,0.505307899788022,0.0,0.0,0.0,True,True,Competition coordinates coincide with ERA5 nodes; nearest is faster/equivalent and avoids coastal mixing
+bilinear,8339,0.9856097853459648,0.014390214654035257,0.5157612999901175,9.970228588791636e-15,8.010259122670504e-13,0.0,True,False,Competition coordinates coincide with ERA5 nodes; nearest is faster/equivalent and avoids coastal mixing

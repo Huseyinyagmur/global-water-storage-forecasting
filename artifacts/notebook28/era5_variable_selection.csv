@@ -1,0 +1,16 @@
+ERA5_variable_name,Unit,Physical_meaning,Expected_relation_to_TWS,Chosen_lag,Leakage_risk,Download_size,Decision,Reason
+total_precipitation,m day-1 in moda,water input,positive storage forcing,t-1,Medium,~173 MB/month global upper bound,Included,core budget
+total_evaporation,m day-1 in moda; ECMWF sign convention may be negative,water loss,negative storage forcing after sign normalization,t-1,Medium,~173 MB/month,Included,core budget; verify sign
+surface_runoff,m day-1 in moda,surface drainage,storage loss/redistribution,t-1,Medium,~173 MB/month,Included,core budget
+sub_surface_runoff,m day-1 in moda,subsurface drainage,deep storage loss proxy,t-1,Medium,~173 MB/month,Included,core budget
+snowfall,m water equivalent day-1,frozen input,snow storage accumulation,t-1,Medium,~173 MB/month,Included,direct TWS component proxy
+snowmelt,m water equivalent day-1,frozen-to-liquid transfer,redistributes snow storage,t-1,Medium,~173 MB/month,Included,seasonal release
+volumetric_soil_water_layer_4,m3 m-3,100–289 cm soil water,deep memory proxy,t-1,Medium,~173 MB/month,Included,most independent soil layer
+volumetric_soil_water_layer_1,m3 m-3,0–7 cm soil water,surface state,t-1,Medium,~173 MB/month,Rejected initially,overlaps supplied near-surface soil moisture
+volumetric_soil_water_layer_2,m3 m-3,7–28 cm soil water,shallow root-zone state,t-1,Medium,~173 MB/month,Rejected initially,limit first download to 7 variables
+volumetric_soil_water_layer_3,m3 m-3,28–100 cm soil water,root-zone state,t-1,Medium,~173 MB/month,Rejected initially,add only if layer 4 proves useful
+snow_depth,m water equivalent,snow store,direct snow-storage proxy,t-1,Medium,~173 MB/month,Rejected initially,snowfall/melt chosen for limited pilot
+potential_evaporation,m day-1,atmospheric demand,drying pressure,t-1,Medium,~173 MB/month,Rejected initially,actual evaporation prioritized
+2m_temperature,K,air temperature,energy/snow phase proxy,t-1,Low–Medium,~173 MB/month,Rejected,not direct water budget
+skin_temperature,K,surface temperature,energy proxy,t-1,Low–Medium,~173 MB/month,Rejected,not direct water budget
+leaf_area_index_high_vegetation,m2 m-2,vegetation structure,ET modulation,t-1,Medium,~173 MB/month,Rejected,outside single core hypothesis

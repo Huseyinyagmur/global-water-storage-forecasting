@@ -1,0 +1,11 @@
+Dimension,Current_solution,Plausible_top10_solution,Gap_assessment,Confidence
+Target anchor,Strong TWS_t/persistence and dual-regime logic,Likely retains persistence anchor,No meaningful gap,High
+Dynamic forcings,Mostly supplied SPEI and near-surface soil moisture,Likely adds operational precipitation/ET/runoff/snow/deep-soil state,Major information gap,High
+Groundwater representation,Indirect through lagged TWS and proxies,May add deep-soil/land-model/aquifer proxies; direct current groundwater remains difficult,Major physical gap,Medium
+Spatial structure,Coordinates/clusters plus bounded hemispheric correction,"May use basin, upstream, multiresolution or graph context",Moderate gap,Medium
+Temporal representation,Engineered lags/rolling statistics and trees,"May use causal sequences, but a transformer is not required",Moderate gap,Low–Medium
+Validation,Temporal/irregular/spatial gates evolved; same-grid OOF limitation,"Likely frozen issue-time, basin and regime stress tests",Selection gap,Medium–High
+Availability provenance,Audited conceptually; no external-data vintage pipeline,Must track release stream/version per feature,Major validity gap,High
+Ensemble diversity,Mostly related tabular models and conservative blends,May combine physically distinct mechanisms,Moderate gap,Medium
+Tail/regional behavior,South P95 1.773752; correction transfer weak,Likely explicitly controls high-error regimes under RMSE,Material gap,Medium
+Reproducibility/trust,"Strong hashes, audits, model card; trust 66.30/100",Top 10 must reproduce and pass trust/practicality review,"Current strength, still incomplete",High

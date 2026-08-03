@@ -1,0 +1,9 @@
+Check,Expected,Status
+coordinate range,train/test lat -55.5..83.5; lon -179.5..179.5,pass from repository data
+longitude convention,"normalize ERA5 to [-180,180)",pending external data
+time convention,"monthly Period[M], source=t-1",policy fixed
+nearest pilot,required,pending external data
+bilinear pilot,required,pending external data
+row count/order/uniqueness,must be invariant,pending external data
+future timestamp,must be zero,pending external data
+missing rate,report split/variable,pending external data

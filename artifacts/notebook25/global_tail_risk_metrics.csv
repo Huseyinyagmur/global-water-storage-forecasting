@@ -1,0 +1,19 @@
+Metric,Value,Threshold definition
+RMSE,0.7438085372982696,P90/P95 are OOF-derived; 2x median fixed from OOF
+MAE,0.5682330989710527,P90/P95 are OOF-derived; 2x median fixed from OOF
+Mean residual,0.03287688801110164,P90/P95 are OOF-derived; 2x median fixed from OOF
+Median residual,-0.006045304889425007,P90/P95 are OOF-derived; 2x median fixed from OOF
+Residual standard deviation,0.7430820866890514,P90/P95 are OOF-derived; 2x median fixed from OOF
+Median absolute error,0.4443294891455183,P90/P95 are OOF-derived; 2x median fixed from OOF
+P75 absolute error,0.8051827484386619,P90/P95 are OOF-derived; 2x median fixed from OOF
+P90 absolute error,1.2315380854201172,P90/P95 are OOF-derived; 2x median fixed from OOF
+P95 absolute error,1.520082132730736,P90/P95 are OOF-derived; 2x median fixed from OOF
+P99 absolute error,2.12357899569193,P90/P95 are OOF-derived; 2x median fixed from OOF
+Maximum absolute error,4.461002874264854,P90/P95 are OOF-derived; 2x median fixed from OOF
+Residual skewness,0.18156974640308027,P90/P95 are OOF-derived; 2x median fixed from OOF
+Residual kurtosis,0.8785144600850288,P90/P95 are OOF-derived; 2x median fixed from OOF
+Underprediction rate,0.49619382521233674,P90/P95 are OOF-derived; 2x median fixed from OOF
+Overprediction rate,0.5038061747876632,P90/P95 are OOF-derived; 2x median fixed from OOF
+Large-error fraction >P90,0.10000053401259736,P90/P95 are OOF-derived; 2x median fixed from OOF
+Large-error fraction >P95,0.050000934522045376,P90/P95 are OOF-derived; 2x median fixed from OOF
+Large-error fraction >2x median,0.21046237480742172,P90/P95 are OOF-derived; 2x median fixed from OOF

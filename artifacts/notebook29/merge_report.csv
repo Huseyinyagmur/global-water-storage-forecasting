@@ -1,0 +1,2 @@
+expected_pilot_rows,merged_rows,row_coverage,duplicate_keys,feature_missing_rate,regions_covered,dates_covered,order_preserved,date_alignment_passed,status
+8339,8339,1.0,0,0.005396330495263221,3,15,not applicable; validated one-to-one keys,True,passed

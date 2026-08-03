@@ -1,0 +1,2 @@
+rows,safe_rows,safe_fraction,future_rows,minimum_lag_months,assertion,all_safe,status
+8339,8339,1.0,0,1,era5_source_month < prediction_origin,True,passed

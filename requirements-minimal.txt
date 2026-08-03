@@ -1,0 +1,10 @@
+numpy
+pandas
+scikit-learn
+scipy
+lightgbm
+matplotlib
+nbformat
+pyarrow
+jupyter
+# Optional historical notebooks: xgboost, catboost, seaborn, shap

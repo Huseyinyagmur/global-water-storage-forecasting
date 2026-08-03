@@ -1,0 +1,46 @@
+Name,Technical_description,Estimated_public_gain,Leakage_risk,Code_complexity,Data_need,Development_time,Impact,Risk,Difficulty,Novelty,Feasibility,Expected_LB_contribution,Total_score,Priority
+ERA5-Land water-budget residual,"Cutoff-safe precipitation, evaporation, runoff, SWE and layer-water deltas correct frozen baseline",0.005–0.025,Medium,Medium,ERA5-Land,5–8 days,5,3,3,4,5,5,4.48,Very High
+IMERG precipitation forcing,Add lagged Early/Late monthly precipitation anomalies,0.002–0.015,Low–Medium,Medium,GPM IMERG,3–5 days,4,2,3,3,5,4,3.96,Very High
+CHIRPS preliminary precipitation,Land precipitation accumulation/anomaly with release-safe archive,0.002–0.012,Low–Medium,Low–Medium,CHIRPS prelim,2–4 days,4,2,2,3,5,4,4.06,Very High
+SMAP NRT root/surface state,Add issue-time soil moisture/freeze-thaw state,0.001–0.010,Medium,High,SMAP NRT,5–8 days,3,3,4,4,3,3,3.02,Medium
+Snow water equivalent expert,Cold-region expert from ERA5-Land SWE/melt changes,0.001–0.012,Medium,Medium,ERA5-Land,4–6 days,4,3,3,4,4,4,3.8,High
+Deep-soil layer memory,Four ERA5-Land soil layers and recession deltas,0.002–0.015,Medium,Medium,ERA5-Land,4–6 days,5,3,3,4,4,4,4.07,Very High
+Runoff–ET balance feature,Lagged P-ET-runoff balance accumulated at 1/3/6 months,0.003–0.018,Medium,Medium,ERA5-Land,4–6 days,5,3,3,4,4,5,4.3,Very High
+Vintage reconstruction audit,Record product/version/release date for every external feature,Validity enabler,Low,High,provider metadata,3–7 days,5,1,4,3,4,5,4.28,Very High
+HydroBASINS aggregation,Aggregate forcings and residual context by drainage basin,0.002–0.015,Low,High,HydroBASINS + forcing,5–10 days,4,2,4,5,4,4,3.92,High
+River-graph residual GNN,Causal upstream/downstream message passing on residuals,0.003–0.020,Medium,Very high,HydroSHEDS + forcings,2–3 weeks,4,3,5,5,2,3,3.13,Medium
+Aquifer-region hierarchy,Random effects/expert groups based on aquifer maps,0.001–0.012,Medium,High,WHYMAP/aquifer data,1–2 weeks,3,3,4,5,2,3,2.96,Low
+Reservoir capacity context,Static dam count/capacity and regulated-basin interaction,0.000–0.008,Medium,Medium,GRanD,3–5 days,2,3,3,4,3,2,2.62,Low
+Irrigation/human-use proxy,Static irrigated fraction and withdrawal intensity,0.000–0.010,Medium–High,High,FAO/GHSL,1–2 weeks,3,4,4,5,2,2,2.63,Low
+ENSO/PDO/NAO regime gates,Release-safe lagged teleconnection indices gate experts,0.000–0.006,Low,Low,NOAA indices,1–2 days,2,1,2,3,5,2,3.16,Medium
+OISST teleconnection embedding,Lagged basin-scale SST EOFs,0.001–0.010,Medium,High,NOAA OISST,1–2 weeks,3,3,4,5,2,3,2.96,Low
+Vegetation stress state,NRT NDVI/EVI anomaly and change,0.001–0.008,Medium,High,MODIS/VIIRS NRT,1–2 weeks,3,3,4,4,2,3,2.84,Low
+Static elevation/slope,DEM-derived terrain controls with interactions,0.000–0.005,Low,Low,Copernicus DEM,2–3 days,2,1,2,2,5,2,3.04,Medium
+Land-cover fractions,Static water/wetland/forest/cropland fractions,0.000–0.006,Low–Medium,Low,ESA WorldCover,2–3 days,2,2,2,3,4,2,2.88,Low
+Masked-regime climatology audit,Diagnose whether masked rows represent specific months/regions,Selection enabler,Low,Low,provided data,1–2 days,4,1,1,2,5,3,3.91,High
+Known/masked external-data experts,Separate residual experts with shared forcings,0.002–0.012,Low–Medium,Medium,external forcings,3–5 days,4,2,3,3,4,4,3.78,High
+PatchTST residual sequence,Predict baseline residual from per-cell lag sequences,0.001–0.012,Low,High,provided + forcing,1–2 weeks,3,2,4,4,3,3,3.12,Medium
+TCN residual sequence,Causal dilated convolution over histories,0.001–0.012,Low,Medium,provided + forcing,5–8 days,3,2,3,3,4,3,3.28,Medium
+TFT residual model,Static/dynamic covariate-gated residual forecasting,0.001–0.015,Medium,Very high,provided + forcing,2–3 weeks,3,3,5,5,2,3,2.86,Low
+N-HiTS global panel,Entity-aware lag/covariate global forecast,0.000–0.010,Low–Medium,High,provided + forcing,1–2 weeks,3,2,4,4,3,3,3.12,Medium
+TiDE residual model,Dense encoder-decoder with dynamic covariates,0.001–0.012,Low–Medium,High,provided + forcing,1–2 weeks,3,2,4,4,3,3,3.12,Medium
+DeepAR probabilistic panel,Distributional forecast with cell embeddings,0.000–0.009,Low,High,provided + forcing,1–2 weeks,2,2,4,3,3,2,2.5,Low
+Graph WaveNet basin model,Adaptive adjacency plus hydrologic graph,0.002–0.018,Medium,Very high,topology + forcing,2–4 weeks,4,3,5,5,2,3,3.13,Medium
+Fourier global residual operator,Learn low-frequency spatial residual evolution,0.001–0.015,Medium,Very high,regular grid + forcing,3–5 weeks,3,3,5,5,1,2,2.45,Low
+Multiresolution spatial pyramid,Cell/3°/basin/global lagged forcing summaries,0.002–0.014,Low–Medium,Medium,forcing + grid,5–8 days,4,2,3,4,4,4,3.9,High
+Causal neighbor lags,Only prior-date neighbors; no same-target smoothing,0.001–0.010,Medium,Medium,provided data,4–7 days,3,3,3,3,4,3,3.18,Medium
+Water-budget sign constraints,Constrain residual response signs/ranges where defensible,0.000–0.007,Low,Medium,forcing,3–5 days,3,1,3,4,4,3,3.5,High
+Heteroscedastic uncertainty weighting,Downweight correction in unstable regimes via OOF variance,0.000–0.006,Low–Medium,Medium,OOF,3–4 days,3,2,3,3,4,3,3.28,High
+Tail-aware training diagnostics,Report extreme-regime errors while keeping RMSE objective,Robustness enabler,Low,Low,OOF,1–2 days,4,1,1,2,5,3,3.91,High
+Basin-held-out validation,Leave basins out in addition to time blocks,Selection enabler,Low,Medium,basin map,3–5 days,5,1,3,3,4,4,4.15,Very High
+Vintage-held-out validation,Simulate data latency and missing product releases,Selection enabler,Low,Medium,metadata,3–5 days,5,1,3,4,4,4,4.27,Very High
+Climate-regime stress folds,Hold out El Niño/La Niña and drought extremes,Selection enabler,Low,Medium,NOAA + provided,3–5 days,4,1,3,4,4,3,3.77,High
+OOF diversity constrained blend,Blend only mechanisms with low residual correlation and stable folds,0.001–0.008,Low–Medium,Medium,OOF predictions,3–5 days,3,2,3,3,4,3,3.28,High
+Seed/fold stability gate,Reject gains smaller than seed/fold variability,Prevents false gain,Low,Low,existing pipeline,1–2 days,5,1,1,2,5,4,4.41,Very High
+Public-LB Bayesian restraint,Treat public score as noisy 30% observation; cap iteration,Prevents overfit,Low,Low,submission history,1 day,4,1,1,3,5,3,4.03,Very High
+Two-private-selection diversity,Choose canonical and mechanism-diverse external-data model,Private risk reduction,Low,Low,validated models,1 day,4,1,1,3,5,3,4.03,Very High
+GRACE target reconciliation audit,Ensure no external mascon version indirectly reconstructs target,Validity enabler,High if skipped,Medium,GRACE metadata,2–4 days,5,5,3,4,4,4,3.87,High
+Missingness indicator audit,Test whether availability patterns encode hidden time/region,0.000–0.005,Medium,Low,provided data,1–2 days,3,3,1,2,5,2,3.21,Medium
+Residual seasonal harmonics,Cross-fitted regional seasonal residual basis,0.000–0.006,Medium,Low,OOF,2–3 days,2,3,2,2,4,2,2.66,Low
+Conformal risk bands,Calibrate OOF uncertainty by region/time for trustworthiness,No direct gain,Low,Medium,OOF,3–5 days,2,1,3,4,4,2,3.0,Low
+Foundation EO embeddings,Frozen open model embeddings for land state,Unknown,Medium–High,Very high,open EO foundation model,3–5 weeks,2,4,5,5,1,1,1.85,Low

@@ -1,0 +1,6 @@
+Feature_set,Validation_system,Overall_RMSE,Known_RMSE,Masked_RMSE,Mean_fold_RMSE,Fold_std,Worst_fold,South_RMSE,North_RMSE,Dry_RMSE,Wet_RMSE,Training_seconds,Prediction_seconds,Gain_vs_E0,Status
+E0/E1/E2/E3,Notebook11_temporal,,,,,,,,,,,,,,blocked: external data unavailable
+E0/E1/E2/E3,strict_date_grouped_temporal,,,,,,,,,,,,,,blocked: external data unavailable
+E0/E1/E2/E3,irregular_date_hindcast,,,,,,,,,,,,,,blocked: external data unavailable
+E0/E1/E2/E3,spatial_block,,,,,,,,,,,,,,blocked: external data unavailable
+E0/E1/E2/E3,space_time,,,,,,,,,,,,,,blocked: external data unavailable

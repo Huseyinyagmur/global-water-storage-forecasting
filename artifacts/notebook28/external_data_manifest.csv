@@ -1,0 +1,2 @@
+Dataset,Provider,License,Format,Latency,Authentication,Local_path,Redistribution_policy,URL
+ERA5-Land monthly means,Copernicus Climate Data Store,CC-BY; dataset terms must be accepted,monthly 0.1° NetCDF,ERA5-Land-T ~5 days; consolidated ~2–3 months,CDS account + personal token,data/external/era5_land/raw,Not committed; large and provider-governed,https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land-monthly-means

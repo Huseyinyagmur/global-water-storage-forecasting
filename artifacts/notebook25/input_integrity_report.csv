@@ -1,0 +1,7 @@
+Input,Exists,Row/item count,ID unique,Target column,Date column,Spatial identifier,Missing values,Ordering/hash note,Canonical SHA match,Current-best SHA match
+Training data,True,2154021,True,True,True,lat/lon,0,source order retained,True,True
+Test data,True,280961,True,True,True,lat/lon,186913,source order retained,True,True
+Canonical submission,True,280961,True,True,False,ID,0,b61ecd15862ca6d7527c4f494de802ed6ea6d31c420737cb78f977d9bda3b968,True,True
+Current-best submission,True,280961,True,True,False,ID,0,84d4ce6efdbfc3fbca55d9eea1ebccfe628ffa962e31b62a654c179dc649b488,True,True
+Notebook 20 validation definitions,True,2,True,True,True,global grid,0,artifact present,True,True
+Serialized model artifacts,False,0,True,False,False,not applicable,0,not required; fold models are reproducibly refit,True,True

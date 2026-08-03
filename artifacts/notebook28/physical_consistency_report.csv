@@ -1,0 +1,8 @@
+Check,Rule,Observed,Status
+precipitation_nonnegative,total_precipitation >= 0,pending external data,blocked: external data unavailable
+runoff_nonnegative,surface/subsurface runoff >= 0,pending external data,blocked: external data unavailable
+soil_water_range,"0 <= volumetric soil water <= plausible porosity; flag, do not clip silently",pending external data,blocked: external data unavailable
+evaporation_sign,document ECMWF convention; convert loss magnitude explicitly,pending external data,blocked: external data unavailable
+hydrology_units,moda m/day × 1000 × days_in_month = mm/month,pending external data,blocked: external data unavailable
+temperature_units,K to °C only if later admitted,not applicable; rejected,complete
+accumulation_boundary,calendar month; no centered window/backfill,policy fixed,complete

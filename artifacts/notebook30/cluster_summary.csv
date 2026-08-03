@@ -1,0 +1,5 @@
+method,clusters,noise_fraction,runtime_seconds,target_used
+KMeans,64,0.0,4.328542599920183,False
+MiniBatchKMeans,64,0.0,0.2364264999050647,False
+DBSCAN,6,0.0007636016544702514,0.13377630012109876,False
+Agglomerative,64,0.0,3.9100672998465598,False

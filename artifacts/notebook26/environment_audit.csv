@@ -1,0 +1,14 @@
+Dependency,Detected version,Minimal role,Status,Exact-environment note
+numpy,2.2.6,direct notebook import/model/report dependency,installed and used by repository family,pin captured from active project .venv; platform differences may remain
+pandas,2.3.1,direct notebook import/model/report dependency,installed and used by repository family,pin captured from active project .venv; platform differences may remain
+scikit-learn,1.8.0,direct notebook import/model/report dependency,installed and used by repository family,pin captured from active project .venv; platform differences may remain
+scipy,1.16.3,direct notebook import/model/report dependency,installed and used by repository family,pin captured from active project .venv; platform differences may remain
+lightgbm,not available,direct notebook import/model/report dependency,referenced but not installed,pin captured from active project .venv; platform differences may remain
+xgboost,not available,direct notebook import/model/report dependency,referenced but not installed,pin captured from active project .venv; platform differences may remain
+catboost,not available,direct notebook import/model/report dependency,referenced but not installed,pin captured from active project .venv; platform differences may remain
+matplotlib,3.10.3,direct notebook import/model/report dependency,installed and used by repository family,pin captured from active project .venv; platform differences may remain
+seaborn,not available,direct notebook import/model/report dependency,referenced but not installed,pin captured from active project .venv; platform differences may remain
+shap,not available,direct notebook import/model/report dependency,referenced but not installed,pin captured from active project .venv; platform differences may remain
+nbformat,5.10.4,direct notebook import/model/report dependency,installed and used by repository family,pin captured from active project .venv; platform differences may remain
+pyarrow,not available,direct notebook import/model/report dependency,referenced but not installed,pin captured from active project .venv; platform differences may remain
+jupyter,1.1.1,direct notebook import/model/report dependency,installed and used by repository family,pin captured from active project .venv; platform differences may remain

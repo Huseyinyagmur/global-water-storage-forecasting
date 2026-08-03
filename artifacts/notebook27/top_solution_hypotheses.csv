@@ -1,0 +1,12 @@
+Hypothesis,Confidence,Rationale
+Uses additional operational precipitation/land-state data,High,Official rules explicitly invite Copernicus covariates; current signal set has an information ceiling
+Uses release-date/vintage-safe data engineering,High,Top-10 code review and one-month availability make provenance essential
+Uses deeper soil/snow/runoff/ET variables,Medium–High,They map directly to omitted TWS stores/fluxes
+Uses strong lagged TWS persistence as anchor,High,One-step target and repository evidence make current state extremely informative
+Trains known/masked experts or missingness-aware model,High,Test contains materially different TWS_t availability regimes
+Uses basin/neighbor or multi-resolution spatial context,Medium,"Global robustness favors spatial structure, but no winner evidence is public"
+Uses conservative diverse ensemble,Medium,Often robust under RMSE; public/private split punishes variant chasing
+Uses a transformer,Low,No public solution evidence; one-step horizon and tabular strength reduce necessity
+Uses GraphCast/FourCastNet directly,Low,Compute/data mismatch and no public evidence
+Uses external GRACE t+1 or retrospectively revised proxy,Low and impermissible,Would violate availability/target-leakage requirements; not a legitimate hypothesis
+Optimizes public leaderboard with many corrections,Low,Top-10 private robustness and code review make this fragile

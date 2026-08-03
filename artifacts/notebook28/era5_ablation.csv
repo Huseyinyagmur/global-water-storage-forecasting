@@ -1,0 +1,9 @@
+Feature_group,Temporal_RMSE,Irregular_RMSE,Spatial_RMSE,Space_time_RMSE,Masked_RMSE,Worst_fold,Gain_vs_E0,Training_cost,Accepted,Status
+Precipitation,,,,,,,,,Not evaluated,blocked: external data unavailable
+Evaporation,,,,,,,,,Not evaluated,blocked: external data unavailable
+Runoff,,,,,,,,,Not evaluated,blocked: external data unavailable
+Snow,,,,,,,,,Not evaluated,blocked: external data unavailable
+Soil moisture profile,,,,,,,,,Not evaluated,blocked: external data unavailable
+Temperature/energy proxy,,,,,,,,,Not evaluated,blocked: external data unavailable
+Water-budget aggregates,,,,,,,,,Not evaluated,blocked: external data unavailable
+Antecedent accumulation features,,,,,,,,,Not evaluated,blocked: external data unavailable

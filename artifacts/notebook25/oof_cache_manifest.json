@@ -1,0 +1,7 @@
+{
+  "policy_key": "930820c104c27a52e4343886446899f9efcfb7c544a46b97257e4c58c886e11f",
+  "folds": [
+    "strict_temporal_1",
+    "strict_temporal_2"
+  ]
+}

@@ -1,0 +1,25 @@
+Column name,Type,Description,Source,Leakage-safe status,Missing value policy
+row_id,str,original sample identifier,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+original_index,int64,Train.csv row index,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+date,datetime64[us],validation date,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+year,int16,year,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+month,int8,month,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+latitude,float64,latitude,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+longitude,float64,longitude,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+spatial_group,str,spatial group,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+hemisphere,str,hemisphere,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+latitude_band,str,latitude band,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+climate_regime,str,climate regime,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+drought_regime,str,drought regime,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+fold_id,str,fold id,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+train_end_date,datetime64[us],train end date,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+target,float64,observed target,Train.csv / fold model / deterministic audit,validation outcome; never used as model input,no missing expected
+oof_prediction,float64,strict OOF prediction,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+residual,float64,target - prediction,Train.csv / fold model / deterministic audit,validation outcome; never used as model input,no missing expected
+absolute_error,float64,absolute error,Train.csv / fold model / deterministic audit,validation outcome; never used as model input,no missing expected
+squared_error,float64,squared error,Train.csv / fold model / deterministic audit,validation outcome; never used as model input,no missing expected
+underprediction_flag,bool,underprediction flag,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+overprediction_flag,bool,overprediction flag,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+spatial_support_score,float64,fixed 0-1 spatial support,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+temporal_support_score,float64,fixed 0-1 temporal support,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected
+combined_support_score,float64,mean spatial/temporal support,Train.csv / fold model / deterministic audit,yes; fold-training data only,no missing expected

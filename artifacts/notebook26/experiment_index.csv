@@ -1,0 +1,27 @@
+Notebook,Filename,Purpose,Input dependencies,Main output,Submission generated,Public result,Current relevance,Recommended reading order,Status
+1,01_eda.ipynb,Data/schema and target exploration,data/raw + prior notebook artefacts,notebook 1 results/artefacts,False,,historical evidence,Foundation,historical experiment
+2,02_baseline_model.ipynb,Establish simple prediction baseline,data/raw + prior notebook artefacts,notebook 2 results/artefacts,True,,historical evidence,Foundation,historical experiment
+3,03_lightgbm.ipynb,Test LightGBM,data/raw + prior notebook artefacts,notebook 3 results/artefacts,True,,historical evidence,Model development,historical experiment
+4,04_xgboost.ipynb,Test XGBoost,data/raw + prior notebook artefacts,notebook 4 results/artefacts,True,,historical evidence,Model development,historical experiment
+5,05_catboost.ipynb,Test CatBoost,data/raw + prior notebook artefacts,notebook 5 results/artefacts,True,,historical evidence,Model development,historical experiment
+6,06_ensemble.ipynb,Blend boosting predictions,data/raw + prior notebook artefacts,notebook 6 results/artefacts,True,,historical evidence,Model development,historical experiment
+7,07_feature_engineering.ipynb,General feature engineering,data/raw + prior notebook artefacts,notebook 7 results/artefacts,True,,historical evidence,Feature research,historical experiment
+8,08_time_series_validation.ipynb,Temporal validation redesign,data/raw + prior notebook artefacts,notebook 8 results/artefacts,False,,historical evidence,Validation and audit,historical experiment
+9,09_advanced_model_selection.ipynb,Advanced model selection and submission,data/raw + prior notebook artefacts,notebook 9 results/artefacts,True,0.835133802,historical evidence,Model development,historical experiment
+10,10_model_explainability.ipynb,Explain strongest model and residuals,data/raw + prior notebook artefacts,notebook 10 results/artefacts,False,,historical evidence,Validation and audit,historical experiment
+11,11_submission_improvement.ipynb,Dual-expert submission improvement,data/raw + prior notebook artefacts,notebook 11 results/artefacts,True,0.836026816,final reference,Model development,successful
+11,11_submission_optimization.ipynb,Optimize submission with conservative blend,data/raw + prior notebook artefacts,notebook 11 results/artefacts,True,0.824463818,final reference,Model development,successful
+12,12_advanced_submission_optimization.ipynb,Expand optimization ideas,data/raw + prior notebook artefacts,notebook 12 results/artefacts,True,0.8298,historical evidence,Feature research,historical experiment
+13,13_generalization_optimization.ipynb,Reduce local overfitting,data/raw + prior notebook artefacts,notebook 13 results/artefacts,True,,historical evidence,Validation and audit,historical experiment
+14,14_alternative_models.ipynb,Test non-boosting families,data/raw + prior notebook artefacts,notebook 14 results/artefacts,True,0.825971129,historical evidence,Model development,historical experiment
+15,15_delta_spatiotemporal_forecasting.ipynb,Forecast target delta with dual experts,data/raw + prior notebook artefacts,notebook 15 results/artefacts,True,0.824797753,historical evidence,Model development,historical experiment
+16,16_competition_level_feature_research.ipynb,Large single-feature and interaction research,data/raw + prior notebook artefacts,notebook 16 results/artefacts,True,0.839181712,historical evidence,Feature research,historical experiment
+17,17_submission_reproducibility_audit.ipynb,Audit submission identity and reproducibility,data/raw + prior notebook artefacts,notebook 17 results/artefacts,False,,final reference,Validation and audit,audit/report
+18,18_domain_hydrology_feature_research.ipynb,Test hydrology-inspired features,data/raw + prior notebook artefacts,notebook 18 results/artefacts,True,0.831108253,historical evidence,Feature research,historical experiment
+19,19_challenge_technical_specification.ipynb,Translate challenge into technical specification,data/raw + prior notebook artefacts,notebook 19 results/artefacts,False,,final reference,Validation and audit,audit/report
+20,20_strict_temporal_spatial_validation.ipynb,Audit leakage and generalization proxies,data/raw + prior notebook artefacts,notebook 20 results/artefacts,False,,final reference,Validation and audit,audit/report
+21,21_spatial_residual_correction.ipynb,Correct stable spatial residual bias,data/raw + prior notebook artefacts,notebook 21 results/artefacts,True,0.823609466,final reference,Refinement,successful
+22,22_research_roadmap_and_experiment_synthesis.ipynb,research roadmap,data/raw + prior notebook artefacts,notebook 22 results/artefacts,False,,final reference,Trustworthiness and reporting,audit/report
+23,23_correction_temporal_transferability.ipynb,temporal correction transferability,data/raw + prior notebook artefacts,notebook 23 results/artefacts,False,,final reference,Trustworthiness and reporting,audit/report
+24,24_trustworthiness_bias_and_model_card.ipynb,trustworthiness/model card,data/raw + prior notebook artefacts,notebook 24 results/artefacts,False,,final reference,Trustworthiness and reporting,audit/report
+25,25_oof_tail_risk_and_spatial_support_audit.ipynb,row-level OOF tail/support audit,data/raw + prior notebook artefacts,notebook 25 results/artefacts,False,,final reference,Trustworthiness and reporting,audit/report

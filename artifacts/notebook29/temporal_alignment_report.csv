@@ -1,0 +1,4 @@
+region,expected_months,observed_months,duplicate_months,missing_months,month_start_encoded,timezone,source_policy,passed
+equator,36,36,0,0,True,naive/monthly,t-1,True
+north,36,36,0,0,True,naive/monthly,t-1,True
+south,36,36,0,0,True,naive/monthly,t-1,True

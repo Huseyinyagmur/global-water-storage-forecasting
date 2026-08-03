@@ -98,3 +98,5 @@ Thumbs.db
 desktop.ini
 
 .tmp**
+artifacts/notebook25/temporal_support_rows.csv
+artifacts/notebook25/spatial_support_rows.csv
