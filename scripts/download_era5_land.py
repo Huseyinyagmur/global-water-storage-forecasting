@@ -89,11 +89,30 @@ def build_pilot_manifest() -> pd.DataFrame:
                         "status":"cached" if target.exists() else "planned"})
     return pd.DataFrame(out)
 
+def build_extended_pilot_manifest() -> pd.DataFrame:
+    """Build 2010-2018 regional manifest while reusing the 2014-2016 pilot cache."""
+    out=[]
+    for region,area in PILOT_REGIONS.items():
+        north,west,south,east=area
+        cells=(round((north-south)/.1)+1)*(round((east-west)/.1)+1)
+        estimate_mb=cells*12*len(PILOT_VARIABLES)*4/1024**2
+        for year in range(2010,2019):
+            base="pilot" if 2014<=year<=2016 else "extended_pilot"
+            target=root()/"data/external/era5_land"/base/"raw"/f"{region}_{year}.nc"
+            out.append({"dataset":DATASET,"region":region,"year":year,"months":"01-12",
+                        "variables":"|".join(PILOT_VARIABLES),"area":",".join(map(str,area)),
+                        "format":"netcdf","target_path":str(target.relative_to(root())),
+                        "estimated_uncompressed_mb":round(estimate_mb,2),"exists":target.exists() and target.stat().st_size>0,
+                        "size_bytes":target.stat().st_size if target.exists() else 0,
+                        "sha256":sha256(target) if target.exists() and target.stat().st_size>0 else "",
+                        "status":"cached" if target.exists() and target.stat().st_size>0 else "planned"})
+    return pd.DataFrame(out)
+
 def main() -> int:
-    ap=argparse.ArgumentParser(); ap.add_argument("--execute",action="store_true"); ap.add_argument("--pilot",action="store_true")
+    ap=argparse.ArgumentParser(); ap.add_argument("--execute",action="store_true"); group=ap.add_mutually_exclusive_group(); group.add_argument("--pilot",action="store_true"); group.add_argument("--extended-pilot",action="store_true")
     args=ap.parse_args(); art=root()/"artifacts"/"notebook28"; art.mkdir(parents=True,exist_ok=True)
-    manifest=build_pilot_manifest() if args.pilot else build_manifest()
-    report=(root()/"artifacts/notebook29/download_report.csv") if args.pilot else (art/"era5_download_manifest.csv")
+    manifest=build_extended_pilot_manifest() if args.extended_pilot else build_pilot_manifest() if args.pilot else build_manifest()
+    report=(root()/"artifacts/notebook31/download_extension_report.csv") if args.extended_pilot else (root()/"artifacts/notebook29/download_report.csv") if args.pilot else (art/"era5_download_manifest.csv")
     report.parent.mkdir(parents=True,exist_ok=True)
     if not args.execute:
         manifest.to_csv(report,index=False)
@@ -114,7 +133,7 @@ def main() -> int:
     for i,row in manifest.iterrows():
         dest=root()/row.target_path; dest.parent.mkdir(parents=True,exist_ok=True)
         if dest.exists() and dest.stat().st_size>0: continue
-        pilot=bool(args.pilot)
+        pilot=bool(args.pilot or args.extended_pilot)
         request={"product_type":"monthly_averaged_reanalysis","variable":PILOT_VARIABLES if pilot else VARIABLES,
                  "year":str(row.year),"month":[f"{m:02d}" for m in range(1,13)] if pilot else f"{int(row.month):02d}",
                  "time":"00:00","data_format":"netcdf","download_format":"unarchived"}

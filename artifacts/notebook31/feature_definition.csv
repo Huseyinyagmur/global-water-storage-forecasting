@@ -1,0 +1,10 @@
+feature,family,unit,physical_meaning,formula,decision,cutoff
+tp,raw,m/day monthly mean,total precipitation,identity,included,strict t-1
+e,raw,m water equivalent/day,ERA5 evaporation; negative denotes upward loss,identity,included,strict t-1
+sro,raw,m/day,surface runoff,identity,included,strict t-1
+ssro,raw,m/day,sub-surface runoff,identity,included,strict t-1
+swvl1,raw,m3/m3,0–7 cm soil water,identity,included,strict t-1
+swvl3,raw,m3/m3,28–100 cm soil water,identity,included,strict t-1
+water_balance_proxy,derived,m/day,precipitation minus actual evaporation magnitude,tp + e,included,strict t-1
+total_runoff,derived,m/day,combined runoff,sro + ssro,included,strict t-1
+soil_profile_gradient,derived,m3/m3,deep minus surface soil water,swvl3 - swvl1,included,strict t-1

@@ -1,0 +1,2 @@
+rows,safe_rows,safe_fraction,future_rows,minimum_lag_months,all_safe,policy
+37779,37779,1.0,0,1,True,strict t-1
