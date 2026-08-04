@@ -1,0 +1,10 @@
+{
+  "signature": "a5f2afa34993323d0aef5d1b5219d3b7a3fc8ba6ddeae9860e46411fb8bb5bc3",
+  "sha256": "3f4858f436aa4843f3f322a0d14585f09bc17c19432ca879f0c0b268829d346f",
+  "rows": 2154021,
+  "columns": 108,
+  "bytes": 930537072,
+  "source_date_strict": true,
+  "target_derived": false,
+  "build_seconds": 18.1859659999609
+}

@@ -1,0 +1,12 @@
+{
+  "config_signature": "a5f2afa34993323d0aef5d1b5219d3b7a3fc8ba6ddeae9860e46411fb8bb5bc3",
+  "checkpoint_sha256": "3b0494fb6e27e36a8eb828ce06a51b8882341eee536a033d14a1cfee1839bb6b",
+  "fold": "strict_temporal_1",
+  "kind": "strict_temporal",
+  "train_seconds": 213.36496080015786,
+  "inference_seconds": 4.3710199999623,
+  "peak_ram_gb": 3.1223297119140625,
+  "elapsed_seconds": 226.3497699999716,
+  "train_rows": 1404975,
+  "valid_rows": 374312
+}

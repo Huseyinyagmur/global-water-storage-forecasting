@@ -1,0 +1,9 @@
+Fold_ID,Lag_source_before_prediction,Validation_target_not_in_lags,Future_rows_absent,Same_date_absent,Target_derived_prior_absent,Scaler_or_imputation,Merge_index_alignment,OOF_rows_unique,Train_validation_dates_disjoint,All_passed
+strict_temporal_1,True,True,True,True,True,none; native missing,True,True,True,True
+strict_temporal_2,True,True,True,True,True,none; native missing,True,True,True,True
+irregular_1,True,True,True,True,True,none; native missing,True,True,True,True
+irregular_2,True,True,True,True,True,none; native missing,True,True,True,True
+lat_south,True,True,True,True,True,none; native missing,True,True,True,True
+lon_americas,True,True,True,True,True,none; native missing,True,True,True,True
+grid_asia,True,True,True,True,True,none; native missing,True,True,True,True
+space_time_asia,True,True,True,True,True,none; native missing,True,True,True,True

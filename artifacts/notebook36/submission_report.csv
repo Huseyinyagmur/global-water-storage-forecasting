@@ -1,0 +1,2 @@
+Submission,Created,Rows,Integrity_passed,ID_unique,ID_order,NaN_count,Infinity_count,Numeric_Target,Known_count,Masked_count,Min,Max,Mean,Std,Canonical_correlation,Current_best_correlation,Canonical_MAD,Current_best_MAD,Changed_row_fraction,SHA256
+submission_36_f1_l12_primary.csv,True,280961,True,True,True,0,0,True,94048,186913,-2.181691,2.3895206,0.07024728926649411,0.5553607886651057,0.7665766031556217,0.7659100187368688,0.334773378733118,0.33320449265724245,1.0,6735008c502ef2e18142b51ff907d09b5fd10c90f9495ebe061196d941bebb08

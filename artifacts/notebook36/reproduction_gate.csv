@@ -1,0 +1,8 @@
+Check,Expected,Observed,Difference,Tolerance,Passed
+RMSE,0.6409937143325806,0.6409937143325806,0.0,1e-06,True
+row_count,7577,7577,0.0,0.0,True
+feature_count_known,141,141,0.0,0.0,True
+feature_count_masked,140,140,0.0,0.0,True
+cache_SHA256,cfdc3c42cd6056ee6df9feb9b8161486677ae518f1af1203b5570e70525bb2f5,cfdc3c42cd6056ee6df9feb9b8161486677ae518f1af1203b5570e70525bb2f5,,0.0,True
+cold_start_fraction,0.00013197835554968986,0.00013197835554968986,0.0,1e-12,True
+prediction_alignment,unique subset strict_temporal_2,True,,0.0,True

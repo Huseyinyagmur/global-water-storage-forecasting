@@ -1,0 +1,14 @@
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1];NB=ROOT/'notebooks/37_validation_leaderboard_postmortem.ipynb'
+def build():
+ cells=[
+ {'cell_type':'markdown','metadata':{},'source':['# 37 — Validation–Leaderboard Postmortem\n','Analysis only: no model training, package/data download or submission creation. Public scores are restricted to repository-verified/user-supplied records. Correlations with n≤4 are labelled insufficient evidence.\n']},
+ {'cell_type':'markdown','metadata':{},'source':['## Predeclared diagnostic design\n','Validation–test similarity is target-free: mask 25%, lag completeness 25%, month 10%, latitude 8%, longitude 7%, location overlap 10%, climate regime 10%, date-gap 5%. These weights diagnose coverage and do not optimize public scores. The primary audit asks whether TWS availability was propagated before constructing lag features.\n']},
+ {'cell_type':'code','execution_count':None,'metadata':{},'outputs':[],'source':['%run ../scripts/notebook37_runtime.py\n']},
+ {'cell_type':'code','execution_count':None,'metadata':{},'outputs':[],'source':["from pathlib import Path\nimport pandas as pd\nfrom IPython.display import display,Markdown\nR=next(p for p in [Path.cwd().resolve(),*Path.cwd().resolve().parents] if (p/'data/raw/Train.csv').exists());A=R/'artifacts/notebook37'\nfor n in ['submission_inventory','local_public_metric_inventory','validation_public_correlation','f1_l12_submission_difference_analysis','test_support_mismatch','validation_test_similarity','masking_pattern_audit','public_positive_negative_comparison','conservative_salvage_analysis']:\n display(Markdown('### '+n));display(pd.read_csv(A/f'{n}.csv').head(100))\n"]},
+ {'cell_type':'code','execution_count':None,'metadata':{},'outputs':[],'source':["req=['submission_inventory.csv','local_public_metric_inventory.csv','validation_public_correlation.csv','f1_l12_submission_difference_analysis.csv','test_support_mismatch.csv','validation_test_similarity.csv','masking_pattern_audit.csv','public_positive_negative_comparison.csv','conservative_salvage_analysis.csv','validation_redesign.md','notebook38_plan.md','final_recommendation.md']\nassert not [x for x in req if not (A/x).exists()]\nassert not list((R/'submissions').glob('submission_37*.csv'))\ndisplay(Markdown((A/'validation_redesign.md').read_text(encoding='utf-8')));display(Markdown((A/'notebook38_plan.md').read_text(encoding='utf-8')));display(Markdown((A/'final_recommendation.md').read_text(encoding='utf-8')))\n"]}
+ ]
+ for i,c in enumerate(cells):c['id']=f'nb37-{i:02d}'
+ NB.write_text(json.dumps({'cells':cells,'metadata':{'kernelspec':{'display_name':'Python 3','language':'python','name':'python3'},'language_info':{'name':'python','version':'3'}},'nbformat':4,'nbformat_minor':5},ensure_ascii=False,indent=1),encoding='utf-8');print(NB)
+if __name__=='__main__':build()

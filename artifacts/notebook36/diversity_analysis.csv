@@ -1,0 +1,2 @@
+Prediction_Pearson,Prediction_Spearman,Residual_correlation,MAD,Maximum_difference,Worst_5pct_error_overlap
+0.7421587,0.7206083335773064,0.82295644,0.3166445,2.0753484,0.026820112821227104

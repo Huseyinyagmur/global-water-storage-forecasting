@@ -1,0 +1,13 @@
+metric,Pearson,Spearman,pairwise_ranking_accuracy,sign_agreement_vs_canonical,sample_count,evidence
+Irregular hindcast,-0.19759307976151758,-0.7999999999999999,0.16666666666666666,0.25,4,insufficient evidence: n=4; different historical OOF rows
+Notebook 11 temporal,0.34502298351962823,-0.39999999999999997,0.3333333333333333,0.25,4,insufficient evidence: n=4; different historical OOF rows
+Space-time,0.05951310311455235,-0.7999999999999999,0.16666666666666666,0.25,4,insufficient evidence: n=4; different historical OOF rows
+Spatial block,0.8106464160149014,0.39999999999999997,0.6666666666666666,0.75,4,insufficient evidence: n=4; different historical OOF rows
+Strict date-grouped,0.25279819914004203,0.19999999999999998,0.5,0.5,4,insufficient evidence: n=4; different historical OOF rows
+masked RMSE,,,,,3,insufficient/non-common validation design
+known RMSE,,,,,2,insufficient/non-common validation design
+worst fold,,,,,4,insufficient/non-common validation design
+fold std,,,,,3,insufficient/non-common validation design
+southern hemisphere RMSE,,,,,6,insufficient/non-common validation design
+transferability score,,,,,6,insufficient/non-common validation design
+pilot RMSE,,,,,6,insufficient/non-common validation design
