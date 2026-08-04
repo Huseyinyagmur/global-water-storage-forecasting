@@ -71,6 +71,12 @@ mlruns/
 # ==========================
 data/raw/
 data/processed/
+data/external/era5_land/global/raw/
+data/external/era5_land/global/processed/
+artifacts/notebook32/cache/
+*.nc
+*.grib
+*.zarr
 
 # Eğer processed verileri paylaşmak istersen
 # data/raw/

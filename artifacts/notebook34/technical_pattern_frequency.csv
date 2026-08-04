@@ -1,0 +1,24 @@
+Pattern,Reliable_source_count,Effective_problem_type,Tried_here,Local_result,Low_bandwidth_feasible,Package_need,Expected_effect,Confidence
+Gradient boosting,3,Hydrology/tabular pooled panels,True,Extensively; canonical family remains public-best,Yes,None,Medium,High
+Sequence models,3,TWS and hydrologic memory,True,Notebook 33 bounded pilot: S1 0.696528 vs E0 0.772760,Yes,Existing CPU PyTorch,High,High
+LSTM/GRU,2,Global/seasonal TWS,True,GRU won pilot; LSTM weaker at L6,No,CUDA desirable,High,High
+TCN,1,Generic earth time series,True,Notebook 33 L6 pilot weaker,Yes,Existing CPU PyTorch,Low,Medium
+Transformer,1,Groundwater/EO sequences,False,Not isolated in repository,No,Large framework/compute,Uncertain,Low
+Graph neural networks,1,Spatial TWS reconstruction,False,Not isolated in repository,No,PyTorch/graph package,Medium-long term,Medium
+ConvLSTM,2,Gridded TWS fields,False,Not isolated in repository,No,GPU plus gridded inputs,Medium,Medium
+Spatial lag features,2,Geospatial hydrology,False,Not isolated in repository,Yes,None,Medium,Medium
+External reanalysis data,4,TWS reconstruction/forecast,True,ERA5-Land three-region pilot gain 0.009427,No,Data download,High,High
+ERA5/ERA5-Land,3,Global TWS,True,Notebook 31 positive pilot; global download deferred,No,9GB deferred,High,High
+GLDAS,3,TWS components/forecast,False,Not isolated in repository,No,Large external data,Medium,High
+SMAP,1,Soil moisture forecasting,False,Not isolated in repository,No,External data,Low-medium,Medium
+IMERG/CHIRPS precipitation,2,Drought/TWS,False,Not isolated in repository,No,Small-to-medium data,Medium,High
+NDVI/MODIS,2,Drought/vegetation coupling,False,Not isolated in repository,No,External raster,Low-medium,Medium
+Climatology,3,Seasonal hydrology,False,Not isolated in repository,Yes,None,Medium,High
+Residual correction,2,Bias/local regime correction,True,Tried; transfer concerns recorded,Yes,None,Low-medium,Medium
+Multi-stage experts,2,Regime/missingness handling,True,Known/masked dual experts used,Yes,None,Medium,High
+Location embeddings,2,Pooled-site forecasting,False,Not isolated in repository,No,Neural framework,Medium,Medium
+Lag and rolling windows,5,Hydrologic memory,True,Multiple notebooks; flattened full panel not isolated,Yes,None,High,High
+Physics-informed loss,1,Water balance,False,Not isolated in repository,No,Custom training,Uncertain,Low
+Ensemble,4,Competition hydrology,True,Canonical blend and sequence pilot blend useful,Yes,None,Medium,High
+Calibration,2,Probabilistic/bias correction,False,Not isolated in repository,Yes,None,Low,Medium
+Pseudo labeling,0,No reliable direct evidence,False,Not isolated in repository,Yes,None,Negative/risky,Low

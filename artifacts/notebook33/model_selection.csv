@@ -1,0 +1,2 @@
+selected_family,selected_length,selected_structure,criterion,CUDA_requested,CUDA_used,pilot_signal,full_training_allowed,full_training_blocker
+GRU,12,dual,"lowest pilot RMSE, then time/simplicity",True,False,True,False,installed PyTorch is CPU-only; full panel run exceeds performance policy

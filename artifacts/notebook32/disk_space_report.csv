@@ -1,0 +1,2 @@
+strategy,tile_count,request_count_total,request_count_pending,source_start,source_end,estimated_download_gb,estimated_uncompressed_gb,estimated_processed_gb,minimum_required_free_gb,free_disk_gb,disk_gate_passed,estimated_duration_hours,exact_command
+30-degree used-coordinate tiles,50,850,850,2002-04,2018-11,8.9111328125,20.247558593749996,0.08163973689079285,34.24033114314079,51.67843246459961,True,10-24 depending on CDS queue,.venv\Scripts\python.exe scripts\download_era5_land_global.py --execute --confirm I_APPROVE_GLOBAL_ERA5_DOWNLOAD

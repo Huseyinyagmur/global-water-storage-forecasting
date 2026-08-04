@@ -1,0 +1,3 @@
+cold_start,rows,fraction,sequence_RMSE,canonical_RMSE,strategy
+False,7576,0.9998680216444503,0.6965341423230202,0.7728059158205302,left zero padding + missing indicator; tabular fallback not activated
+True,1,0.00013197835554968986,0.6455837786197662,0.2457767862944311,left zero padding + missing indicator; tabular fallback not activated

@@ -1,0 +1,26 @@
+Name,Technical_description,Carries_new_information,Internet_cost,Disk_cost,Compute_need,Package_need,Development_time,Leakage_risk,Validation_risk,Expected_public_gain,Confidence,Priority_score
+Flattened L12 LightGBM dual experts,Flatten past 12 observed input rows; known delta and masked absolute,Yes,0,<1 GB,CPU,existing LightGBM,1–2 days,Low,Medium,0.003–0.015 hypothesis,High,95
+HistGradientBoosting flattened L12,Same panel window with sklearn HGB,Yes,0,<1 GB,CPU,existing sklearn,1 day,Low,Medium,0–0.008 hypothesis,Medium,78
+MLPRegressor sequence flattening,Scaled L12 vectors into regularized sklearn MLP,Yes,0,<1 GB,CPU,existing sklearn,1 day,Low,High,0–0.008 hypothesis,Medium,70
+Coordinate Fourier basis,Sin/cos harmonics of lat/lon without learned embeddings,Weakly,0,tiny,CPU,none,hours,Low,Medium,0–0.004 hypothesis,Medium,72
+Fourier temporal basis,Annual/semiannual/trend basis fitted cutoff-safely,Weakly,0,tiny,CPU,none,hours,Low,Low,0–0.003 hypothesis,High,76
+Autoregressive delta windows,Lagged TWS differences and robust summaries,Yes,0,tiny,CPU,none,hours,Medium,Medium,0–0.008 hypothesis,High,83
+Multi-output direct forecasting,Predict several horizons jointly only if labels are cutoff-safe,Potentially,0,medium,CPU/GPU,existing,2–3 days,Medium,High,uncertain,Low,45
+Masked historical summaries,"Last-observed, age, rolling robust trend for masked rows",Yes,0,tiny,CPU,none,hours,Medium,Medium,0–0.010 hypothesis,High,87
+GRU pilot distillation,Train CPU tabular model on OOF GRU predictions only,No new external information,0,medium,CPU,existing,1 day,Medium,High,uncertain; can copy pilot bias,Low,52
+Small ONNX sequence runtime,Export/run frozen sequence model efficiently,No,small package,<0.5 GB,CPU/GPU,onnxruntime,1 day,Low,Low,runtime only,Medium,55
+Offline CUDA wheel,Download compatible wheel elsewhere and transfer,No,2.6 GB elsewhere,3 GB,GPU,PyTorch wheel,hours,Low,Low,"enables validation, no direct gain",High,74
+Google Colab full GRU,Upload code/data and run frozen GRU validation,No,upload dataset,cloud,GPU,preinstalled PyTorch,hours,Low,Medium,tests 0.003–0.020 hypothesis,High,82
+Kaggle Notebook full GRU,Private dataset + frozen GRU validation,No,upload dataset,cloud,GPU,preinstalled PyTorch,hours,Low,Medium,tests 0.003–0.020 hypothesis,High,86
+ERA5 via alternate network,Complete manifest download outside metered connection,Yes,8.91 GB elsewhere,9+ GB,CPU,existing,days,Low,Medium,0.003–0.015 hypothesis,High,67
+Smaller external climate source,Use point/monthly variables with tiny transfer,Yes,MB-scale,small,CPU,requests optional,1–2 days,Low,Medium,0–0.006 hypothesis,Medium,70
+CHIRPS precipitation,Monthly precipitation aggregated to competition points,Yes,medium unless point API,medium,CPU,xarray optional,2 days,Low,Medium,0–0.008 hypothesis,Medium,65
+NASA POWER monthly,Point/regional monthly climate API,Yes,MB-scale,small,CPU,none,1 day,Low,Medium,0–0.006 hypothesis,Medium,79
+NOAA climate indices,Join globally available monthly indices,Yes,KB,tiny,CPU,none,hours,Low,Medium,0–0.004 hypothesis,Medium,80
+ENSO/NAO/PDO indices,Lagged teleconnection indices and interactions,Yes,KB,tiny,CPU,none,hours,Low,Medium,0–0.005 hypothesis,Medium,84
+Precomputed climate datasets,Use licensed small tables if prediction-time valid,Yes,varies,small,CPU,none,1 day,Medium,Medium,uncertain,Low,58
+OOF regime residual audit,Rank climate/missingness/location failure regimes,No,0,tiny,CPU,none,hours,Low,Low,indirect,High,81
+Robust clipped delta target,Winsorize training delta by fold only,No,0,tiny,CPU,none,hours,Low,Medium,0–0.003 hypothesis,Medium,68
+Latitude-band model calibration,OOF-only affine correction by broad band,No,0,tiny,CPU,none,hours,Medium,High,0–0.002 hypothesis,Low,46
+Nonnegative OOF ensemble,Constrained weights for canonical and flattened sequence,No,0,tiny,CPU,scipy existing,hours,Low,Medium,0–0.005 hypothesis,High,85
+Training-only location climatology,Smoothed month/location baseline with backoff,Weakly,0,tiny,CPU,none,hours,Medium,Medium,0–0.004 hypothesis,Medium,71

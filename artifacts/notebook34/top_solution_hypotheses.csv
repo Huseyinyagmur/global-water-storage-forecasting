@@ -1,0 +1,16 @@
+Hypothesis,Evidence,Counter_evidence,Confidence,Our_gap,How_to_test_cheaply
+Top teams exploit longer target history with leakage-safe windows,GRU-L12 pilot and hydrologic persistence literature,Pilot is small and selected on same folds,High,Canonical is mostly tabular,Flatten L12 into frozen LightGBM on strict folds
+Top teams use operational precipitation/reanalysis forcing,ERA5 pilot and multiple TWS papers,Global ERA5 is not yet evaluated,High,No global forcing,Small regional or monthly-index ablation
+They separate known and masked regimes,Test has missing TWS_t; local dual expert works,Exact top code unavailable,High,Already mostly covered,Keep dual experts fixed
+They pool all locations while encoding location,DrivenData winners used common weights plus site_id,Different target and only 26 sites,Medium,Coordinates may underfit location identity,Coordinate Fourier basis
+They validate both time and unseen space,Challenge robustness goal,Leaderboard split details inaccessible,High,Temporal validation dominates,Frozen space-time gate
+They decompose seasonal/trend/residual components,GRACE-FCast design,Stable extrapolation can fail under climate change,Medium,Partial seasonal features,OOF-only decomposition ablation
+They include climate teleconnection indices,Ethiopia paper and subseasonal forecasting,Global local effects heterogeneous,Medium,No ENSO/NAO/PDO,Tiny monthly index join
+They use spatially structured models,BCNN/MTGNN TWS papers,Competition coordinates may be sparse and graph costly,Medium,Spatial correction is weak,Cheap neighbor summaries before GNN
+They ensemble mechanism-diverse models,Hydrology winners and local blend gain,Correlated errors limit value,High,Canonical and GRU residual r=0.858,OOF nonnegative blend
+They preserve TWS persistence as a hard anchor,TWS has long memory; canonical strength,Masked rows lack anchor,High,Known expert strong,Delta-vs-absolute expert check
+They model water-budget changes rather than raw levels,ERA5 variables and TWS physics,Measurement/reanalysis errors accumulate,Medium,Limited forcing,Lagged P-ET-runoff proxies
+They use regularized flattened sequences rather than deep nets,Tree winners and GRU pilot signal,Flattening loses recurrent inductive bias,High,Not isolated at L12 dual,CPU LightGBM one controlled config
+They condition errors on climate/location regimes,Regional skill differences in literature,Regime splits reduce samples,Medium,Experts only by missingness,OOF residual clusters with fixed bins
+They avoid public-LB tuning and optimize robustness,30/70 split and top-10 review in official spec transcript,Direct leaderboard data unavailable,High,Many submissions create selection risk,Predeclare gates and one submission
+They incorporate human-water-use/static basin context,TWS includes groundwater and human effects,Free global operational data is difficult,Low,Climate alone misses pumping/reservoirs,Static aridity/basin proxy audit

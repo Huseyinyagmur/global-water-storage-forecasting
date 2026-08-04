@@ -1,0 +1,2 @@
+locations_total,pilot_locations,rows_total,pilot_rows,pilot_train_rows,pilot_validation_rows,date_min,date_max,validation_start,chronological_sort,location_key,CUDA_available,device,GPU_name
+15715,320,2154021,43660,36083,7577,2002-05-01,2015-08-01,2012-12-01,True,lat+lon,False,cpu,unavailable: installed PyTorch is CPU-only

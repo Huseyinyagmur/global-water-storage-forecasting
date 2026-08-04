@@ -1,0 +1,2 @@
+Feature_set,Validation_system,Overall_RMSE,Known_RMSE,Masked_RMSE,Mean_fold_RMSE,Fold_std,Worst_fold,North_RMSE,South_RMSE,Dry_RMSE,Wet_RMSE,Training_seconds,Prediction_seconds,Status
+E0/E1/E2/E3,Notebook11/strict/irregular/spatial/space-time,,,,,,,,,,,,,pending controlled global download approval

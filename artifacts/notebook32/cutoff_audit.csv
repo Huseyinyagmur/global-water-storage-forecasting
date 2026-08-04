@@ -1,0 +1,2 @@
+expected_rows,audited_rows,safe_fraction,future_rows,policy,status
+2434982,0,,,era5_source_month = prediction_origin - 1,pending controlled global download approval

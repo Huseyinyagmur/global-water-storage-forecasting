@@ -1,0 +1,13 @@
+Critique,Evidence,Severity,Leaderboard_effect,Remedy,Low_cost_test
+Tabular dependence,Most successful pipeline uses boosted snapshots,High,May miss multi-month storage memory,Flatten 12-month window,Single strict-fold pilot
+Target-derived prior risk,Prior logic is powerful and repeatedly audited,High,Distribution shift/leakage if cutoff handling slips,Retain row-level provenance assertions,Mutation test
+External forcing absence,ERA5 extended pilot gained 0.009427 overall,High,Likely leaves causal information unused,Eventually global operational forcing,Pilot already supports
+Temporal memory gap,GRU-L12 pilot gained 0.076232 over pilot E0,High,"Potentially large, but pilot optimism likely",CPU flattened L12 surrogate,Frozen three-fold validation
+Spatial generalization,Spatial correction transfer score was weak,High,Private spatial shift risk,Space-time acceptance gate,Leave-location-block-out
+Masked expert,Masked error dominates and improves less reliably,High,Large leaderboard influence,Historical summaries without current TWS,Masked-only RMSE gate
+Sequence pilot reliability,"Only 7,577 rows/two folds; architecture selected on pilot",High,Winner's curse,Full frozen validation,No new architecture search
+ERA5 pilot scope,Only three regions,High,Geographic transfer unknown,Global data later or more micro-regions,Small cached-region stress test
+Public LB overfitting,Many candidates and user-reported ranks,High,30% public selection noise,Submission budget and preregistration,Do not submit Notebook34
+Validation mismatch,Temporal strong; spatial/irregular evidence incomplete,High,Robustness goal may not match local mean RMSE,Worst-fold + masked + space-time gates,Re-score frozen OOF
+Submission experiment count,Repeated variants increase multiple-testing risk,Medium,False discovery on public LB,One mechanism per submission,Maintain submission ledger
+Compute/internet constraints,CUDA torch and 8.91GB ERA5 deferred,Medium,"Blocks strongest signals, but prevents uncontrolled expansion",CPU surrogate first; cloud only after gate,Measure runtime on one fold

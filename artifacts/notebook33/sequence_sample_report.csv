@@ -1,0 +1,4 @@
+length,train_samples,validation_samples,cold_start_rows,features,target_or_future_feature_used,scaler_fit
+3,36083,7577,0,11,False,fold training only
+6,36083,7577,0,11,False,fold training only
+12,36083,7577,1,11,False,fold training only

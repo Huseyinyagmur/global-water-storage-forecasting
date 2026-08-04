@@ -1,0 +1,2 @@
+method,tile_size_degrees,used_tiles,coordinate_mapping_cache,status
+nearest,30,50,data/external/era5_land/global/processed/coordinate_mapping.parquet,pending controlled global download approval

@@ -1,0 +1,9 @@
+Competition_or_paper,Problem,Winning_rank,Model,External_data,Temporal_method,Spatial_method,Ensemble,Validation,Success_factor,Transferability
+DrivenData Water Supply Forecast Rodeo,Seasonal basin inflow quantiles,1/2/3,CatBoost ensemble; MLP,"SWE, precipitation, flow",Issue-date/to-date features,Pooled sites with site_id,Weighted,10 held-out years,Hydrologically causal forcings plus pooled/local representation,High
+Forecast Rodeo II,Subseasonal temperature/precipitation,Winners,Ensembles,Operational forecasts/climate state,Real-time issue dates,Regional,Yes,26 forecast sprints,Operational hindcasts and slow climate state,Medium
+GRACE-FCast,Global TWS change,Paper,LSTM,Lagged hydrometeorology,Trend/seasonal/nonseasonal decomposition,Global grid,Implicit decomposition,Out-of-time 2010–2024,Separate predictable components,High
+Near-real-time global TWSA,TWSA reconstruction,Paper,Bayesian CNN,ERA5-Land precipitation/temperature,Stationarization,Spatial convolution,Uncertainty,Time-based,External forcing plus spatial field,High
+Bayesian CNN GRACE gap,Gap filling,Paper,BCNN attention/residual,Multi-source climate,Sequence of fields,Convolution,Uncertainty,GRACE gap,Spatial context and uncertainty,High
+Ethiopia TWS forecast,Seasonal TWS,Paper,Linear regression,SST/SLP,Lag correlation,Four hydro-regions,No,Regional time split,Teleconnections can add information cheaply,High
+GRACE downscaling,TWSC downscaling,Paper,Partial least squares,WaterGAP/P/ET/runoff,Monthly,0.5-degree fields,Multi-product,Cross-product checks,Water-budget variables and regularization,Medium
+Amazon drought TWS,Months-ahead TWS,Paper,Statistical/ML workflow,"CHIRPS, CERES, MODIS, GLDAS",Lagged forcing,Amazon region,Multi-source,Uncertainty analysis,Precipitation distribution and land-state forcing,Medium
