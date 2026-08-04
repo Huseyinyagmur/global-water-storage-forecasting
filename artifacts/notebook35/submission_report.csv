@@ -1,0 +1,2 @@
+Submission,Created,Rows,Reason,Acceptance,Gate_A_pilot,Gate_B_pilot,Gate_C,Gate_D,SHA256
+none,False,0,Robust full validation not completed; acceptance gate cannot pass,False,True,True,False,False,

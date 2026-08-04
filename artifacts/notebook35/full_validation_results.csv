@@ -1,0 +1,5 @@
+Validation,Status,Overall_RMSE,Known_RMSE,Masked_RMSE,Fold_RMSE,Mean_fold_RMSE,Fold_std,Worst_fold,Northern_RMSE,Southern_RMSE,Cold_start_RMSE,Training_seconds,Inference_seconds,Peak_RAM_GB,Estimated_total_minutes,Estimated_peak_RAM_GB
+strict_date_grouped_temporal,not_run_performance_gate,,,,,,,,,,,,,,93.84925442285366,16.564908106732823
+irregular_date_hindcast,not_run_performance_gate,,,,,,,,,,,,,,,
+spatial_block,not_run_performance_gate,,,,,,,,,,,,,,,
+space_time,not_run_performance_gate,,,,,,,,,,,,,,,

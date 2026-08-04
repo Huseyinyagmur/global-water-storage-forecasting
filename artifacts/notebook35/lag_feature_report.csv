@@ -1,0 +1,5 @@
+Feature_set,Definition,Feature_count,Allowed,Reason
+F1,raw lags 1..12 plus TWS missing masks,-1,True,
+F2,nine summaries per dynamic feature plus TWS months-since-last-valid,see model feature counts,True,
+F3,F1 + F2,see model feature counts,True,
+F4,OOF-stable small subset,0,False,one pilot fold cannot establish fold stability

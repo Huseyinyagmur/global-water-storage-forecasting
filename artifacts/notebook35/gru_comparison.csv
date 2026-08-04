@@ -1,0 +1,5 @@
+Question,Value,Caveat
+Flattened gain vs recorded E0,0.13176628566741944,Notebook35 model and Notebook33 recorded E0 differ in training protocol
+Fraction of GRU S1 recorded gain reproduced,1.7284904720775986,Indicative only; direct causal attribution is invalid
+GRU architecture contribution,,Cannot isolate without identical full folds/training population
+Full GRU validation still needed,True,"Yes, if sequence path remains prioritized after robust flattened validation"

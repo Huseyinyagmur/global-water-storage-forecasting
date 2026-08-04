@@ -1,0 +1,4 @@
+Window_length,Rows,Cache_SHA256,Build_seconds,Peak_RAM_GB,Source_date_assertion,Same_date_forbidden,Target_derived_features,Left_padding
+3,43660,422ec15f19e8135f9b6d51bc2078c2a6a8540766b2716abc2d2e88aae55ddf99,59.16424369998276,1.1197586059570312,True,True,False,True
+6,43660,475a45c21d3f01312da422ad9cf3ffa602db6e439b1dc703a34b150fb38044ea,59.112926699919626,0.9960060119628906,True,True,False,True
+12,43660,cfdc3c42cd6056ee6df9feb9b8161486677ae518f1af1203b5570e70525bb2f5,48.71255709999241,1.0227432250976562,True,True,False,True

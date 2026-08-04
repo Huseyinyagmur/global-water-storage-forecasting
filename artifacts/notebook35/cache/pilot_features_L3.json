@@ -1,0 +1,11 @@
+{
+  "signature": "cba504468aefbf8a7aca1701fb1f7f25eeeba72de525f9f0cdba90b2ff657396",
+  "sha256": "422ec15f19e8135f9b6d51bc2078c2a6a8540766b2716abc2d2e88aae55ddf99",
+  "rows": 43660,
+  "length": 3,
+  "elapsed_seconds": 59.16424369998276,
+  "peak_ram_gb": 1.1197586059570312,
+  "source_date_assertion": true,
+  "same_date_forbidden": true,
+  "target_features": false
+}
